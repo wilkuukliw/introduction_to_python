@@ -30,8 +30,11 @@ Materials
 
 Exercises
 ---------
-* This weeks exercises
+* `This weeks exercises <../week08/exercises/>`_
 
+------
+quizes
+------
 * `Lists and Tuples Quiz <https://realpython.com/quizzes/python-lists-tuples/>`_
 * `Python Sets Quiz  <https://realpython.com/quizzes/python-sets/>`_
 * `Python Dictionaries Quiz  <https://realpython.com/quizzes/python-dicts/>`_

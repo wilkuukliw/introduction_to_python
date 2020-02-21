@@ -2,15 +2,6 @@
 
 Exam
 ====
-
-
-.. sidebar:: Sidebar Title
-    :subtitle: Optional Sidebar Subtitle
-
-        Subsequent indented lines comprise
-        the body of the sidebar, and are
-        interpreted as body elements.
-
 At the end of this semester you will have an exam. The exam is evaluated based on the 7 step scale and you are evaluated on the learning outcomes and goals stated in :ref:`about`. 
 
 The exam consist of 2 elements: a hand in of a synopsis, and a oral exam. 
@@ -38,11 +29,5 @@ Exam Topics
 * Generators
 * Decorators
 
-
-.. note::  This is a **note** box.
-
-.. seealso:: This is a simple **seealso** note.
-
-.. warning:: note the space between the directive and the text
 
 

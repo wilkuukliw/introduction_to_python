@@ -3,23 +3,27 @@
 Week 6 - Introduction to python
 ===============================
 
+
+.. sidebar:: Learning goals
+    :subtitle: After this week you will:
+              
+        Have an understanding of how this semester's teachings and learning process are going to be, and of how the exam will proceed. You will be able to use a terminal to control your computer. 
+        
+        You will have a basic understanding of a python development environment will look like and how to use it (interpreter and editor). 
+        
+        You will be able to use and talk about strings, conditions, basics about functions, run a python program from the command line and use the python interpreter. 
+
+
 The first part of today will be an "overview" and "installation" day. We need to be on the same level before we start. You will furthermore get an introduction to the unix filesystem and commandline and you will have exercises in controling your computer through the commandline.  
 
 In the second part you will get an overview of the python language and you will start to get familiar with the language and the development enviroment. We will focus this first lesson on strings and string manipulations.
 
-
-Suggested readings
-------------------
-
+Materials
+---------
 
 
 Exercises
 ---------
-
-
-
-Code examples from teachings
-----------------------------
 
 
 
