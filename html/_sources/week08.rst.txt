@@ -1,0 +1,40 @@
+
+.. _week08:
+
+Week 8 - Data structures and functions
+======================================
+
+
+.. sidebar:: Learning goals
+    :subtitle: After this week you will be able to:
+        
+        - Work with lists, tuples, Dictionary & sets 
+        - Loop over collections with a for & while loop.  
+        - Use pythons for loop both as aforeach and a for loop.  
+        - Sort collections using the sorted build in function and use its key function to perform custom sorting.  
+        - Reading from files using th ebuild in open function. 
+
+Today we will talk about datastructures in python. You will by the end of these sessions be able to use and explain Lists, Tuples, Dictionary & Sets. Work with more details of functions, Read and Write to Files, work with the for and while loop.
+
+Materials
+---------
+* `Lists and Tuples in Python <https://realpython.com/python-lists-tuples/>`_
+* `Sets in Python  <https://realpython.com/python-sets/>`_
+* `Dictionaries in Python  <https://realpython.com/python-dicts/>`_
+* `Python "for" Loops <https://realpython.com/python-for-loop/>`_
+* `Python "while" Loops <https://realpython.com/python-while-loop/>`_
+* `How to Use sorted() and sort() in Python <https://realpython.com/python-sort/>`_
+* `Sorting key parameter explained <https://github.com/python-elective-fall-2019/Lesson-02-Data-structures/blob/master/img/sorted.png>`_
+* `Reading and Writing Files in Python (Guide) <https://realpython.com/read-write-files-python/>`_
+* `Code examples from today <https://github.com/python-elective-spring-2020/Lesson-02-Data-structures/tree/master/code_from_today>`_
+
+Exercises
+---------
+* This weeks exercises
+
+* `Lists and Tuples Quiz <https://realpython.com/quizzes/python-lists-tuples/>`_
+* `Python Sets Quiz  <https://realpython.com/quizzes/python-sets/>`_
+* `Python Dictionaries Quiz  <https://realpython.com/quizzes/python-dicts/>`_
+* `"while" Loops Quiz <https://realpython.com/quizzes/python-while-loop/>`_
+* `Reading and Writing Files in Python Quiz <https://realpython.com/quizzes/read-write-files-python/>`_
+

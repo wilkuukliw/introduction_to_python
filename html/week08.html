@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Week 8 - Data structures and functions &mdash; Introduction to python 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Week 9 - Modules &amp; Packeges" href="week09.html" />
+    <link rel="prev" title="Week 6 - Introduction to python" href="week06.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Introduction to python
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About this elective</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Course materials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mandatory.html">Mandatory assignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exam.html">Exam</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week06.html">Week 6 - Introduction to python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Week 8 - Data structures and functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="week09.html">Week 9 - Modules &amp; Packeges</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Introduction to python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Week 8 - Data structures and functions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/week08.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="week-8-data-structures-and-functions">
+<span id="week08"></span><h1>Week 8 - Data structures and functions<a class="headerlink" href="#week-8-data-structures-and-functions" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar">
+<p class="sidebar-title">Learning goals</p>
+<p class="sidebar-subtitle">After this week you will be able to:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Work with lists, tuples, Dictionary &amp; sets</p></li>
+<li><p>Loop over collections with a for &amp; while loop.</p></li>
+<li><p>Use pythons for loop both as aforeach and a for loop.</p></li>
+<li><p>Sort collections using the sorted build in function and use its key function to perform custom sorting.</p></li>
+<li><p>Reading from files using th ebuild in open function.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<p>Today we will talk about datastructures in python. You will by the end of these sessions be able to use and explain Lists, Tuples, Dictionary &amp; Sets. Work with more details of functions, Read and Write to Files, work with the for and while loop.</p>
+<div class="section" id="materials">
+<h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://realpython.com/python-lists-tuples/">Lists and Tuples in Python</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-sets/">Sets in Python</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-dicts/">Dictionaries in Python</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-for-loop/">Python “for” Loops</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-while-loop/">Python “while” Loops</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-sort/">How to Use sorted() and sort() in Python</a></p></li>
+<li><p><a class="reference external" href="https://github.com/python-elective-fall-2019/Lesson-02-Data-structures/blob/master/img/sorted.png">Sorting key parameter explained</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/read-write-files-python/">Reading and Writing Files in Python (Guide)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/python-elective-spring-2020/Lesson-02-Data-structures/tree/master/code_from_today">Code examples from today</a></p></li>
+</ul>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>This weeks exercises</p></li>
+<li><p><a class="reference external" href="https://realpython.com/quizzes/python-lists-tuples/">Lists and Tuples Quiz</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/quizzes/python-sets/">Python Sets Quiz</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/quizzes/python-dicts/">Python Dictionaries Quiz</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/quizzes/python-while-loop/">“while” Loops Quiz</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/quizzes/read-write-files-python/">Reading and Writing Files in Python Quiz</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="week09.html" class="btn btn-neutral float-right" title="Week 9 - Modules &amp; Packeges" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="week06.html" class="btn btn-neutral float-left" title="Week 6 - Introduction to python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Claus Bove
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+.. Introduction to python documentation master file, created by
+   sphinx-quickstart on Fri Feb 21 12:15:28 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Introduction to python
+======================
+**Term: Spring 2020**
+
+Elective website for the "Introduction to python spring 2020" at KEA, Copenhagen School of Design and Technology.
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   about
+   materials
+   mandatory
+   exam
+   week06
+   week08
+   week09
+
