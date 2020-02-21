@@ -1,6 +1,8 @@
 # Introduction to python
 ## Elective @ KEA spring 2020.
 
+Repository used for teachings.  
+
 Clone repository
 
 ``` 
