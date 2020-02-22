@@ -1,1 +1,9 @@
+# shpinx
 doctrees
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+
+# Mac OS
+.DS_Store

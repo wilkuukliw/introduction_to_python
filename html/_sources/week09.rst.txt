@@ -1,9 +1,43 @@
 .. _week09:
 
-Week 9 - Modules & Packeges
-===========================
+Week 9 - Utilities and Modules
+==============================
 
 
+.. sidebar:: Learning goals
+    :subtitle: After this week you will be able to:
+       
+        - Create your own modules.
+        - Use python build in modules.
+        - Find and use 3rd party modules.
+        - Use the requests module to fetch website data.
+        - search a document for patterns.   
 
+
+Today we will talk about modules in python. You will build your own modules and use them, and you will learn how to use pythons build in modules, and how to use 3rd party modules. 
+
+You will be able to create and use a simple web crawler, and to search a document for patterns.
+
+
+Materials
+---------
+* `Python Modules and Packages <https://realpython.com/python-modules-packages/>`_
+* `Miscellaneous operating system interfaces <https://docs.python.org/3/library/os.html>`_
+* `Subprocess management <https://docs.python.org/3.7/library/subprocess.html#module-subprocess>`_
+* `Python’s Requests Library <https://realpython.com/python-requests/>`_
+* `Downloading Files from URLs in Python <https://www.codementor.io/aviaryan/downloading-files-from-urls-in-python-77q3bs0un>`_
+
+* `How to Learn Python in Five Minutes <https://www.youtube.com/watch?v=ohr6O78jGzs>`_
+
+Exercises
+---------
+
+* `This weeks exercises <>`_
+
+------
+quizes
+------
+
+* `HTTP Requests With the "requests" Library Quiz <https://realpython.com/quizzes/python-requests/>`_
 
 
