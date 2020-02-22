@@ -14,10 +14,9 @@ Week 9 - Utilities and Modules
         - search a document for patterns.   
 
 
-Today we will talk about modules in python. You will build your own modules and use them, and you will learn how to use pythons build in modules, and how to use 3rd party modules. 
+Today we will work with modules in python. You will build your own modules and use them, and you will learn how to use pythons build in modules, and how to use 3rd party modules. 
 
-You will be able to create and use a simple web crawler, and to search a document for patterns.
-
+You will furthermore be able to create and use a simple web crawler, and to search a document for patterns.
 
 Materials
 ---------
@@ -31,13 +30,11 @@ Materials
 
 Exercises
 ---------
-
-* `This weeks exercises <>`_
+* `This weeks exercises <../week09/exercises/>`_
 
 ------
 quizes
 ------
-
 * `HTTP Requests With the "requests" Library Quiz <https://realpython.com/quizzes/python-requests/>`_
 
 
