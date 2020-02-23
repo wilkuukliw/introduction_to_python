@@ -16,10 +16,10 @@ Elective website for the "Introduction to python spring 2020" at KEA, Copenhagen
    :caption: Contents:
 
    about
+   teachings
    materials
    mandatory
    exam
    week06
    week08
    week09
-
