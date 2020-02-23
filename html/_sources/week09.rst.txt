@@ -30,7 +30,7 @@ Materials
 Exercises
 ---------
 * `This weeks exercises <../week09/exercises/>`_
-
+* Solutions
 ------
 quizes
 ------

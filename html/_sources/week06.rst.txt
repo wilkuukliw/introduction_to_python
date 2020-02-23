@@ -33,6 +33,12 @@ Exercises
 ---------
 
 * `This weeks Exercises <https://github.com/Python-Elective-Spring-2020/Lesson-01-intro-to-python/tree/master/exercises>`_
+* Solutions
+
+------
+Quizes
+------
+
 * `Python Strings and Character Data Quiz <https://realpython.com/quizzes/python-strings/>`_
 * `Splitting, Concatenating, and Joining Strings in Python Quiz <https://realpython.com/quizzes/python-split-strings/>`_
 * `Command line Crash Course <https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=707190>`_
