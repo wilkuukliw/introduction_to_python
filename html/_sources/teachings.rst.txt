@@ -5,4 +5,12 @@ Teaching plan
 
 This page will be updated, for now please referer to the teaching plan on fronter.
 
-
++------+------------------------+------------------+-----------+-----------+
+| Week | Topic                  | Learning outcome | Materials | Exercises |
++------+------------------------+------------------+-----------+-----------+
+| 6    | Introduction to python | link             | link      | link      |
++------+------------------------+------------------+-----------+-----------+
+| 8    | Datatypes & functions  | link             | link      | link      |
++------+------------------------+------------------+-----------+-----------+
+| 9    | Utilities & Modules    | link             | link      | link      |
++------+------------------------+------------------+-----------+-----------+
