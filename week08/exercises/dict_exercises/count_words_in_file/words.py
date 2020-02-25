@@ -43,23 +43,12 @@ import sys
 
 ###
 
-def print_words(filename):
-    # open file with name of parameter
-    f = open(filename)
-    t = f.read()
-    words = t.replace('\n', ' ')
-    words = words.strip()
-    words = words.split(' ')
+def print_words(file):
+  # open a text file
+  pass
 
-    print(words)
-    
-        
-
-
-def print_top(filename):
-    pass
-
-
+def print_top(file):
+  pass
 
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
