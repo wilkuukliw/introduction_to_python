@@ -36,6 +36,7 @@ EX 1: Bank Exercise
 
 Create a Bank class, an Account Class, and a Customer class
 
+* All classes should be in a single file. 
 * The bank class should be able to hold many account.
 * You should be able to add new accounts.
 * The Account class should have relevant details.
@@ -47,6 +48,11 @@ Stick to the techniques we have covered so far, and be sure to create doctests.
 **Overloading**
 
 Add the abillity in your code to overload one or more init methods
+
+**Hand in on fronter**
+
+When you are done you should hand in you solution on fronter. You should after this assess 2 other students solutions. (code review, what is good, what is not so good etc.). Who you should assess is handled by fronter (hopefully :))  
+
 
 .. raw:: html
    
