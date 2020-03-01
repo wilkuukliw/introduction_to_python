@@ -1,0 +1,16 @@
+Week 12 - The python datamodel
+==============================
+
+.. sidebar:: Learning goals
+    :subtitle: After this week you will be able to:
+        
+        - 
+
+
+Materials
+---------
+
+
+Exercises
+---------
+

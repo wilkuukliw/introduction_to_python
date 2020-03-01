@@ -1,39 +1,16 @@
-.. _about:
-
 About this elective
 ===================
 
-Learning objectives
--------------------
-*in the end of this semester ...*
+This elective is one of the 3 you have chosen on your 4th semester computer science education. Its aim is make you a better and a more clear thinking programmer, and therefore this electives focus are on low level programming. 
 
-**you will have become a better, and a more clear thinking programmer.**
+Teaching plan
+------------
 
-* You will have gotten experience in learning a new language.
-* You will have knowledge about, be able to explain and use basic python concepts and some more advanced python features.
-* You will have a better understading of the programming concepts from your last 3 semesters.
-* You will have an understanding of what a pythonic coding style means.
+The details of each session can be found by following the links in the meny on the left. Your class and individual schedules can be found on http://keaplan.kea.dk .
 
-    * and you will be able to use this in practical situations.
-    * You will be able to refactor code into using this style of coding.
-    * you wil be able to explain this
-    * and you will be able to relate this to other known languages. (Java e.g)
+.. _learning-goals:
 
-
-
-* You will have knowledge about where and for what this language is used.
-* You will easier be able to follow the teachings on the top-op educations (if you follow that path)
-* You will have the skills needed in jobs where python is a requrement,
-  
-    * and you will be able to perform from day one.
-
-
-* You will have improved you logic thinking abillities.
-* You will be able to aquire knowledge about part of the language on your own.
-* You will be able to perform litterature searches about unsolved problems
-* You will be able to analyse the error messages given to you, and solve the problems related to the errors
-* You will be able to independently study new topics related to python theory and practice.
-
+.. include:: goals/overall.rst
 
 Course Workload
 ---------------
@@ -83,5 +60,7 @@ Software Needed for the Course
 * Jupyter Notebook
 
 * Any text editor or ide of your own choise will do.
+
+.. include::  materials.rst
 
 

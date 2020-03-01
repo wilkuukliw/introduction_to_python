@@ -1,0 +1,18 @@
+Week 16 - Static website generation
+===================================
+
+.. sidebar:: Learning goals
+    :subtitle: After this week you will be able to:
+        
+        - 
+
+
+Materials
+---------
+
+
+
+
+Exercises
+---------
+

@@ -1,0 +1,18 @@
+Learning goals
+--------------
+The overall goal of this elective is to make you a better, and a more clear thinking programmer.  
+It is further more the goal to give you the competencies requred to perform in a job situation where python is needed. 
+
+So at the end of this semester:
+
+* You will be able to solve practical problems using python. 
+* You will be able to explain and use basic python concepts and some advanced ones.
+* You will be able to write pythonic code. 
+* You will be able to explain the difference between pythonic code and what you know from Java programming.
+* You will have knowledge about where and for what python is used.
+
+* You will be able to independently study new topics related to python theory and practice.
+* You will be able to perform litterature searches related to the topic.  
+* You will be able to analyse the error messages given to you, and solve the problems related to the errors
+* You will have the skills needed in jobs where python is a requrement,
+* You will have improved you logic thinking abillities.
