@@ -34,7 +34,7 @@ Exercises
 EX 1: Bank Exercise 
 -------------------
 
-Create a Bank class, an Account Class, and a Customer class
+Create a Bank, an Account, and a Customer class.
 
 * All classes should be in a single file. 
 * The bank class should be able to hold many account.
