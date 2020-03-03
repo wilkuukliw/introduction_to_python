@@ -35,6 +35,10 @@ Exercises
 * `This weeks Exercises <https://github.com/Python-Elective-Spring-2020/Lesson-01-intro-to-python/tree/master/exercises>`_
 * Solutions
 
+
+
+.. _w6_mat: 
+
 ------
 Quizes
 ------

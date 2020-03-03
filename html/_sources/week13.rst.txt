@@ -1,0 +1,23 @@
+.. _week13:
+
+Week 13 - Decorators
+====================
+
+.. sidebar:: Learning goals
+    :subtitle: After this week you will know about:
+        
+        - First class functions 
+        - Lambda functions
+        - Inner functions
+        - Closures
+        - Decorator functions
+        - Decorator classes 
+
+
+Materials
+---------
+
+
+Exercises
+---------
+

@@ -1,7 +1,5 @@
-.. _materials:
-
 Course materials
-================
+----------------
 
 The litterature to support the learning outcome of this elective can be found on this website:
 

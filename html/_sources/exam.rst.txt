@@ -1,24 +1,33 @@
-.. _exam:
-
 Exam
 ====
-At the end of this semester you will have an exam. The exam is evaluated based on the 7 step scale and you are evaluated on the learning outcomes and goals stated in :ref:`about`. 
+At the end of this semester you will have an exam. The exam is evaluated based on the 7 step scale and you are evaluated on the following learning goals:
 
-The exam consist of 2 elements: a hand in of a synopsis, and a oral exam. 
+.. include:: goals/overall.rst
 
+The exam
+--------
 
+The exam consist of 2 elements: 
+
+* a hand in of a synopsis, and a 
+* oral exam.
+
+-------------------
 Hand-in a synopsis:
 -------------------
-* One A4 page for all 6 topics
+Some weeks before the oral examination you should hand in a synopsis on wiseflow. if you fail to hand this in on time, you will not be able to attend the oral exam. The synopsis should follow these requirements:
+
+* One A4 page for all topics
 * Give a short overview of what you will precent at you exam.
 
+----------
 Oral exam:
 ----------
-* Same as 3rd semester SWC
-* Create a 10 minutes presentation and code examples for each topic
-* 6 - 8 topics (can be found on fronter in exam folder)
-* 15 minutes examination after this.
 
+* Same as 3rd semester SWC
+* 6 - 8 topics, where you pick a topic at the beginning of the examination.  
+* Create a 10 minutes presentation and code examples for each topic.
+* After your presentation 15 minutes examination.
 
 Exam Topics
 -----------
@@ -30,4 +39,53 @@ Exam Topics
 * Decorators
 
 
+Exam advice
+-----------
+The flow of the exam flow be as:
+
+Latest << date will come >>  you will have to hand in an synopsis describing what you will present in connection with the different exam topics. The abstract should be maximum one page long and should follow the `exam_synopsis_template`_ .
+
+---------
+Oral exam
+---------
+
+You draw a topic from the topic cards.
+For 6-10 minutes you will present what you have prepared for this specific topic. 
+After that for 15-20 minutes, I (Claus) will ask you questions mainly within the same topic. 
+In the end of the exam, if the censor needs clarifications on your answers, he might ask you to elaborate on an already asked question. 
+
+------------
+Good advice:
+------------
+
+**Talk to your audience**
+
+When preparing for the exam it can be a good idea to clarify with yourself who you are talking to. 
+Me (Claus) and the censor already know what you are trying to tell us, and it can be quite a challenge if your goal is to show us something new that we did not already know about. And of cause, this should also not be your focus! Instead try to see your audience as your fellow students, at the same level as you, but with little knowledge about the topic you are talking about. Breath, talk slowly and explain thoroughly what you know about the topic. In general you only have to show that you understood and can use what we covered during this semester. 
+
+**Write pythonic code**  
+
+We will evaluate you on different parameters, but one of the main parameters is the degree to which you are able to think like a python programmer, and are able to write pythonic code. 
+
+**Live code or prepared examples?**  
+
+At the exam during my questions you are welcome to use your prepared examples if they fits. If you do not have any prepared examples fitting my questions, i will ask you to live code an example demonstrating the answer to my question. It is not meant to be a live coding exam, but you should expect that i might ask you to do so. 
+
+**Questions at the exam**
+
+The questions you will get at the exam will be focused on the topic you picked at the beginning of the exam, but you should expect that you could be asked anything within the whole exam curriculum. 
+
+**Focus of presentation and questions** 
+
+For your presentation you should pick a subtopic that is of interest to you, and then use your 10 minutes on this. I (Claus) will then either ask you questions about this or other subtopics within this same topic.
+
+Some subtopics overlap each other, and can appear multiple places. It is not different topics, but they just relate to the main topic in different ways. Questions about other parts of the curriculum might occur.  
+
+**What to bring at your exam**
+
+* Computer in open condition
+* An open text editor
+* An open Python interpreter
+* An open instance of Jupyter Notebook
+  * Local or online
 

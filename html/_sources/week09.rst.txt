@@ -3,6 +3,8 @@
 Week 9 - Utilities and Modules
 ==============================
 
+.. _w9_lear:
+
 .. sidebar:: Learning goals
     :subtitle: After this week you will be able to:
        
@@ -17,6 +19,8 @@ Today we will work with modules in python. You will build your own modules and u
 
 You will furthermore be able to create and use a simple web crawler, and to search a document for patterns.
 
+.. _w9_mat:
+
 Materials
 ---------
 * `Python Modules and Packages <https://realpython.com/python-modules-packages/>`_
@@ -27,10 +31,13 @@ Materials
 
 * `How to Learn Python in Five Minutes <https://www.youtube.com/watch?v=ohr6O78jGzs>`_
 
+.. _w9_exe:  
+
 Exercises
 ---------
 * `This weeks exercises <../week09/exercises/>`_
 * Solutions
+
 ------
 quizes
 ------

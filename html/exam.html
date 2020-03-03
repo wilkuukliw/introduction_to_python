@@ -25,6 +25,7 @@
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -84,18 +85,37 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="about.html">About this elective</a></li>
-<li class="toctree-l1"><a class="reference internal" href="teachings.html">Teaching plan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="materials.html">Course materials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mandatory.html">Mandatory assignments</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Exam</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#hand-in-a-synopsis">Hand-in a synopsis:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#oral-exam">Oral exam:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#learning-goals">Learning goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-exam">The exam</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hand-in-a-synopsis">Hand-in a synopsis:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#oral-exam">Oral exam:</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#exam-topics">Exam Topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exam-advice">Exam advice</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Oral exam</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#good-advice">Good advice:</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="week06.html">Week 6 - Introduction to python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="week08.html">Week 8 - Data structures and functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="week09.html">Week 9 - Utilities and Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week10.html">Week 10 - OOP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week11.html">Week 11 - Encapsulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week12.html">Week 12 - The python datamodel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week13.html">Week 13 - Decorators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week14.html">Week 14 - Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week16.html">Week 16 - Static website generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week17.html">Week 17 - Static website generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week18.html">Week 18 - Tips &amp; Tricks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week19.html">Week 19 - Tips &amp; Tricks II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week20.html">Week 20 - Exam preperation &amp; Recap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week21.html">Week 21 - Exam preperation &amp; Recap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week22.html">Week 22 - Exam preperation &amp; Recap</a></li>
 </ul>
 
             
@@ -160,25 +180,75 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="exam">
-<span id="id1"></span><h1>Exam<a class="headerlink" href="#exam" title="Permalink to this headline">¶</a></h1>
-<p>At the end of this semester you will have an exam. The exam is evaluated based on the 7 step scale and you are evaluated on the learning outcomes and goals stated in <a class="reference internal" href="about.html#about"><span class="std std-ref">About this elective</span></a>.</p>
-<p>The exam consist of 2 elements: a hand in of a synopsis, and a oral exam.</p>
-<div class="section" id="hand-in-a-synopsis">
-<h2>Hand-in a synopsis:<a class="headerlink" href="#hand-in-a-synopsis" title="Permalink to this headline">¶</a></h2>
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="exam">
+<h1>Exam<a class="headerlink" href="#exam" title="Permalink to this headline">¶</a></h1>
+<p>At the end of this semester you will have an exam. The exam is evaluated based on the 7 step scale and you are evaluated on the following learning goals:</p>
+<div class="section" id="learning-goals">
+<h2>Learning goals<a class="headerlink" href="#learning-goals" title="Permalink to this headline">¶</a></h2>
+<p>The overall goal of this elective is to make you a better, and a more clear thinking programmer.
+It is further more the goal to give you the competencies requred to perform in a job situation where python is needed.</p>
+<p>So at the end of this semester:</p>
 <ul class="simple">
-<li><p>One A4 page for all 6 topics</p></li>
+<li><p>You will be able to solve practical problems using python.</p></li>
+<li><p>You will be able to explain and use basic python concepts and some advanced ones.</p></li>
+<li><p>You will be able to write pythonic code.</p></li>
+<li><p>You will be able to explain the difference between pythonic code and what you know from Java programming.</p></li>
+<li><p>You will have knowledge about where and for what python is used.</p></li>
+<li><p>You will be able to independently study new topics related to python theory and practice.</p></li>
+<li><p>You will be able to perform litterature searches related to the topic.</p></li>
+<li><p>You will be able to analyse the error messages given to you, and solve the problems related to the errors</p></li>
+<li><p>You will have the skills needed in jobs where python is a requrement,</p></li>
+<li><p>You will have improved you logic thinking abillities.</p></li>
+</ul>
+</div>
+<div class="section" id="the-exam">
+<h2>The exam<a class="headerlink" href="#the-exam" title="Permalink to this headline">¶</a></h2>
+<p>The exam consist of 2 elements:</p>
+<ul class="simple">
+<li><p>a hand in of a synopsis, and a</p></li>
+<li><p>oral exam.</p></li>
+</ul>
+<div class="section" id="hand-in-a-synopsis">
+<h3>Hand-in a synopsis:<a class="headerlink" href="#hand-in-a-synopsis" title="Permalink to this headline">¶</a></h3>
+<p>Some weeks before the oral examination you should hand in a synopsis on wiseflow. if you fail to hand this in on time, you will not be able to attend the oral exam. The synopsis should follow these requirements:</p>
+<ul class="simple">
+<li><p>One A4 page for all topics</p></li>
 <li><p>Give a short overview of what you will precent at you exam.</p></li>
 </ul>
 </div>
 <div class="section" id="oral-exam">
-<h2>Oral exam:<a class="headerlink" href="#oral-exam" title="Permalink to this headline">¶</a></h2>
+<h3>Oral exam:<a class="headerlink" href="#oral-exam" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Same as 3rd semester SWC</p></li>
-<li><p>Create a 10 minutes presentation and code examples for each topic</p></li>
-<li><p>6 - 8 topics (can be found on fronter in exam folder)</p></li>
-<li><p>15 minutes examination after this.</p></li>
+<li><p>6 - 8 topics, where you pick a topic at the beginning of the examination.</p></li>
+<li><p>Create a 10 minutes presentation and code examples for each topic.</p></li>
+<li><p>After your presentation 15 minutes examination.</p></li>
 </ul>
+</div>
 </div>
 <div class="section" id="exam-topics">
 <h2>Exam Topics<a class="headerlink" href="#exam-topics" title="Permalink to this headline">¶</a></h2>
@@ -190,6 +260,41 @@
 <li><p>Generators</p></li>
 <li><p>Decorators</p></li>
 </ul>
+</div>
+<div class="section" id="exam-advice">
+<h2>Exam advice<a class="headerlink" href="#exam-advice" title="Permalink to this headline">¶</a></h2>
+<p>The flow of the exam flow be as:</p>
+<p>Latest &lt;&lt; date will come &gt;&gt;  you will have to hand in an synopsis describing what you will present in connection with the different exam topics. The abstract should be maximum one page long and should follow the <a href="#id2"><span class="problematic" id="id3">`exam_synopsis_template`_</span></a> .</p>
+<div class="section" id="id1">
+<h3>Oral exam<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>You draw a topic from the topic cards.
+For 6-10 minutes you will present what you have prepared for this specific topic.
+After that for 15-20 minutes, I (Claus) will ask you questions mainly within the same topic.
+In the end of the exam, if the censor needs clarifications on your answers, he might ask you to elaborate on an already asked question.</p>
+</div>
+<div class="section" id="good-advice">
+<h3>Good advice:<a class="headerlink" href="#good-advice" title="Permalink to this headline">¶</a></h3>
+<p><strong>Talk to your audience</strong></p>
+<p>When preparing for the exam it can be a good idea to clarify with yourself who you are talking to.
+Me (Claus) and the censor already know what you are trying to tell us, and it can be quite a challenge if your goal is to show us something new that we did not already know about. And of cause, this should also not be your focus! Instead try to see your audience as your fellow students, at the same level as you, but with little knowledge about the topic you are talking about. Breath, talk slowly and explain thoroughly what you know about the topic. In general you only have to show that you understood and can use what we covered during this semester.</p>
+<p><strong>Write pythonic code</strong></p>
+<p>We will evaluate you on different parameters, but one of the main parameters is the degree to which you are able to think like a python programmer, and are able to write pythonic code.</p>
+<p><strong>Live code or prepared examples?</strong></p>
+<p>At the exam during my questions you are welcome to use your prepared examples if they fits. If you do not have any prepared examples fitting my questions, i will ask you to live code an example demonstrating the answer to my question. It is not meant to be a live coding exam, but you should expect that i might ask you to do so.</p>
+<p><strong>Questions at the exam</strong></p>
+<p>The questions you will get at the exam will be focused on the topic you picked at the beginning of the exam, but you should expect that you could be asked anything within the whole exam curriculum.</p>
+<p><strong>Focus of presentation and questions</strong></p>
+<p>For your presentation you should pick a subtopic that is of interest to you, and then use your 10 minutes on this. I (Claus) will then either ask you questions about this or other subtopics within this same topic.</p>
+<p>Some subtopics overlap each other, and can appear multiple places. It is not different topics, but they just relate to the main topic in different ways. Questions about other parts of the curriculum might occur.</p>
+<p><strong>What to bring at your exam</strong></p>
+<ul class="simple">
+<li><p>Computer in open condition</p></li>
+<li><p>An open text editor</p></li>
+<li><p>An open Python interpreter</p></li>
+<li><p>An open instance of Jupyter Notebook
+* Local or online</p></li>
+</ul>
+</div>
 </div>
 </div>
 
