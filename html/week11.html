@@ -93,7 +93,15 @@
 <li class="toctree-l1"><a class="reference internal" href="week10.html">Week 10 - OOP</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Week 11 - Encapsulation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#encaptiolation-propeties-exercises">Encaptiolation &amp; Propeties exercises</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ex-1-car-object">Ex 1:  Car object</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex-2-bank">Ex 2: Bank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ex-3-machine-printer">Ex 3: Machine -&gt; printer</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="week12.html">Week 12 - The python datamodel</a></li>
@@ -195,21 +203,81 @@
 }
 </style>
 <div class="section" id="week-11-encapsulation">
-<span id="week11"></span><h1>Week 11 - Encapsulation<a class="headerlink" href="#week-11-encapsulation" title="Permalink to this headline">¶</a></h1>
+<h1>Week 11 - Encapsulation<a class="headerlink" href="#week-11-encapsulation" title="Permalink to this headline">¶</a></h1>
 <div class="sidebar">
 <p class="sidebar-title">Learning goals</p>
 <p class="sidebar-subtitle">After this week you will be able to:</p>
 <blockquote>
 <div><ul class="simple">
-<li></li>
+<li><p>Use private and public attributes in your code</p></li>
+<li><p>Explain what is meant by private in python</p></li>
+<li><p>Work with properties to use encapsulation.</p></li>
+<li><p>And explain the pros and cons of properties compared to Java´s getters and setters.</p></li>
 </ul>
 </div></blockquote>
 </div>
+<p>In todays lectures we will deal with private and public attributes, and how to encasulate data. To solve this in python yu will need to use properties.</p>
 <div class="section" id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.bogotobogo.com/python/python_private_attributes_methods.php">Private attributes and methods</a></p></li>
+<li><p><a class="reference external" href="https://www.python-course.eu/python3_properties.php">Properties vs. Getters and Setters</a></p></li>
+</ul>
 </div>
 <div class="section" id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="encaptiolation-propeties-exercises">
+<h3>Encaptiolation &amp; Propeties exercises<a class="headerlink" href="#encaptiolation-propeties-exercises" title="Permalink to this headline">¶</a></h3>
+<p>All following exercises should be done by using <strong>Properties</strong> when needed. The focus should be on encapsulation.</p>
+<div class="section" id="ex-1-car-object">
+<h4>Ex 1:  Car object<a class="headerlink" href="#ex-1-car-object" title="Permalink to this headline">¶</a></h4>
+<p>Create a Car class. When instanciated the object should be able to take 4 attributes (Make, Model, bhp, mph). They all 4 should be properties.</p>
+</div>
+<div class="section" id="ex-2-bank">
+<h4>Ex 2: Bank<a class="headerlink" href="#ex-2-bank" title="Permalink to this headline">¶</a></h4>
+<p>In the exercise from last monday with the bank, account and customer, change the code to use properties instead of the public variables.</p>
+<ul class="simple">
+<li><p>The bank class should futher be change into not taking any accounts as parameters at initialization.</p></li>
+<li><p>The accouts should be added afterwards, eithers as a single account one at a time, or as a collection of accounts (many at the sametime).</p></li>
+<li><p>Somewhere you should change the code so that a customer only can create one account.</p></li>
+<li><p>The Customer class should make sure that the customer is over 18 year of age.</p></li>
+</ul>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Bank</span><span class="p">:</span>
+     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">accounts</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">class</span> <span class="nc">Account</span><span class="p">:</span>
+     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">no</span><span class="p">,</span> <span class="n">cust</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">no</span> <span class="o">=</span> <span class="n">no</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">cust</span> <span class="o">=</span> <span class="n">cust</span>
+
+<span class="k">class</span> <span class="nc">Customer</span><span class="p">:</span>
+     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="ex-3-machine-printer">
+<h4>Ex 3: Machine -&gt; printer<a class="headerlink" href="#ex-3-machine-printer" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Create a Machine class that takes care of powering on and off a the machine.</p></li>
+<li><p>Create a printer class that is a subclass of the Machine super class.</p></li>
+<li><p>The printer should be able to print to console.</p></li>
+<li><p>The printer should have a papertray, which should be in its own class. The papertray class should keep track of the paper, it should have the abillity to use paper and load new paper in the tray if empty.</p></li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 
