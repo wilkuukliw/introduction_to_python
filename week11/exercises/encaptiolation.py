@@ -19,9 +19,8 @@ The Customer class should make sure that the customer is over 18 year of age.
 """
 
 class Bank:    
-    def __init__(self, acc):
+    def __init__(self):
         self.accounts = []
-        self.accounts.append(acc)
 
 class Account:
     def __init__(self, no, cust):

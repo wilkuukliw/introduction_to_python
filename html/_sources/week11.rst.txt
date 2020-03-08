@@ -16,7 +16,7 @@ Materials
 ---------
 * `Private attributes and methods <https://www.bogotobogo.com/python/python_private_attributes_methods.php>`_
 * `Properties vs. Getters and Setters <https://www.python-course.eu/python3_properties.php>`_
-
+* `Code from today <../week11/code_from_today/>`_
 
 Exercises
 ---------
@@ -40,11 +40,6 @@ Ex 2: Bank
 
 In the exercise from last monday with the bank, account and customer, change the code to use properties instead of the public variables.  
 
-* The bank class should futher be change into not taking any accounts as parameters at initialization. 
-* The accouts should be added afterwards, eithers as a single account one at a time, or as a collection of accounts (many at the sametime).      
-* Somewhere you should change the code so that a customer only can create one account.     
-* The Customer class should make sure that the customer is over 18 year of age.
-
 .. code:: python
    :linenos:
 
@@ -60,6 +55,13 @@ In the exercise from last monday with the bank, account and customer, change the
    class Customer:
         def __init__(self, name):
            self.name = name
+
+
+* The bank class should futher be change into not taking any accounts as parameters at initialization. 
+* The accouts should be added afterwards, eithers as a single account one at a time, or as a collection of accounts (many at the sametime).      
+* Somewhere you should change the code so that a customer only can create one account.     
+* The Customer class should make sure that the customer is over 18 year of age.
+
 
 
 

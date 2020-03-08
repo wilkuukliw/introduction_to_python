@@ -20,7 +20,7 @@ Materials
 * `Python args and kwargs: Demystified <https://realpython.com/python-kwargs-and-args/>`_
 * `doctest — Test interactive Python examples <https://docs.python.org/3/library/doctest.html>`_
 * `Notebook on classes <notebooks/class_notes.ipynb>`_
-
+* `Code from teachings <../week10/code_from_today/>`_
 Exercises
 ---------
 
