@@ -1,5 +1,4 @@
-# bank.py
-
+# bank.p
 
 class Bank:
     """ Bank holding account  
@@ -26,7 +25,8 @@ class Customer:
 
 
 
-
+bank = Bank()
+bank.accounts.appends(Account(123, Customer('Clus')))
 
 
 

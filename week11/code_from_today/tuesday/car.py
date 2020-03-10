@@ -3,8 +3,7 @@
 
 class Car:
     def __init__(self, *args):
-        # self.__make = [] 
-        pass
+        self.__make = [] 
 
     @property 
     def make(self):
