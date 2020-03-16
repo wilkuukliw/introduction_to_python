@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Exercise: Protocol - linked-list &mdash; Introduction to python 0.0.1 documentation</title>
+  <title>Jelly Beans &mdash; Introduction to python 0.0.1 documentation</title>
   
 
   
@@ -145,13 +145,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Exercise: Protocol - linked-list</li>
+      <li>Jelly Beans</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/exercises/protocol_linked_list.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/exercises/JellyBeans.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -188,58 +188,43 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="exercise-protocol-linked-list">
-<h1>Exercise: Protocol - linked-list<a class="headerlink" href="#exercise-protocol-linked-list" title="Permalink to this headline">¶</a></h1>
-<p>In python there is not a build in linked list. If you want to use this datastructure, you either have to make it yourself or import a module (where someone else did it for you.).</p>
-<p>You should chose the first option: create it yourself.</p>
-<hr><div class="section" id="definition-of-a-linked-list">
-<h2>Definition of a linked list<a class="headerlink" href="#definition-of-a-linked-list" title="Permalink to this headline">¶</a></h2>
-<p>A linked list consists of Node objects with 2 instance variables (data and next).</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Node</span><span class="p">:</span>
-     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
-             <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
-             <span class="bp">self</span><span class="o">.</span><span class="n">next</span> <span class="o">=</span> <span class="kc">None</span>
-</pre></div>
-</td></tr></table></div>
-<p>And a LinkedList with 1 instance variable:</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">LinkedList</span><span class="p">:</span>
-     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-             <span class="bp">self</span><span class="o">.</span><span class="n">head</span> <span class="o">=</span> <span class="kc">None</span>
-</pre></div>
-</td></tr></table></div>
-<p>You can assign Nodes to the list like:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">llist</span> <span class="o">=</span> LinkedList<span class="o">()</span>
-llist.head <span class="o">=</span> Node<span class="o">(</span><span class="s1">&#39;Data of first Node&#39;</span><span class="o">)</span>        <span class="c1"># head is a pointer to a Node with data off &#39;Data of First Node&#39;</span>
-llinst.head.next <span class="o">=</span> Node<span class="o">(</span><span class="s1">&#39;Data of second Node&#39;</span><span class="o">)</span> <span class="c1"># next belongs to &#39;Data of First Node&#39; Node and points to &#39;Data of second Node&#39; Node.</span>
-</pre></div>
+<div class="section" id="jelly-beans">
+<h1>Jelly Beans<a class="headerlink" href="#jelly-beans" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="exercise-on-python-class-protocols-properties-overload">
+<h2>Exercise on Python Class, Protocols, Properties, Overload<a class="headerlink" href="#exercise-on-python-class-protocols-properties-overload" title="Permalink to this headline">¶</a></h2>
+<p>Imagine a game where different jelly beans are floating around.
+When they bump into each other they melt together and one of them gain mass, the other looses mass.</p>
+<img alt="../_images/jellybean_art.png" src="../_images/jellybean_art.png" />
+<p>The old one does not dissapear but becomes a Ghost, its mass becomes 0 (maybe a little gas like state).</p>
+<p>If the main Jelly Bean hits a ghost jelly bean, the ghost jelly bean regains its original state, and the mass it gains will be deducted from the main Jelly Bean (it will shrink in size).</p>
+<p>Some Ghost Jellies are born ghosts. If you hit one of these, half of your mass will be stolen by that ghost.</p>
+<p>The game is won when your jelly bean is the only one with a mass.</p>
+<p>The Game is lost if you do not have any more mass.</p>
+<p>YOUR JOB IS NOT TO CREATE THIS GAME, but to create a class that can be used in this game by someone else.</p>
+<p>Your job is also to write pythonic code, using python protocols, properties, overloading etc.</p>
 </div>
-</div>
-<div class="section" id="task">
-<h2>Task<a class="headerlink" href="#task" title="Permalink to this headline">¶</a></h2>
-<p>The Linked List should on a higher level behave like the build in List object. So you could in your interpretor type</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; help<span class="o">(</span>list<span class="o">)</span>
-</pre></div>
-</div>
-<p>The underscore methods (__add__ etc.) you can see in the documentation using help(list) should be implemented in your LinkedList (or at least as many as possible)</p>
-<p>A description of the implemented methods and their behaviour can be seen here:</p>
-<img alt="../_images/list_tup1.png" src="../_images/list_tup1.png" />
-<img alt="../_images/list_tup2.png" src="../_images/list_tup2.png" />
-<p>The features described below should for sure be implement.</p>
+<div class="section" id="assignment">
+<h2>Assignment:<a class="headerlink" href="#assignment" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Make you LinkeList able to tell its length if <code class="code docutils literal notranslate"><span class="pre">len(llist)</span></code> is called.</p></li>
-<li><p>You should be able to access the lists elements like this <code class="code docutils literal notranslate"><span class="pre">llist[1]</span></code> and <code class="code docutils literal notranslate"><span class="pre">llist[-1]</span></code></p></li>
-<li><p>The list should be able to handle slicing syntax <code class="code docutils literal notranslate"><span class="pre">llist[1:4]</span></code> and <code class="code docutils literal notranslate"><span class="pre">llist[-1:-4:-1]</span></code></p></li>
-<li><p>The list should be able to add new items using this syntax <code class="code docutils literal notranslate"><span class="pre">llist[3]</span> <span class="pre">=</span> <span class="pre">Node(3)</span></code></p></li>
-<li><p>The llinkedList should be able to return a string representation of its state when calling <code class="code docutils literal notranslate"><span class="pre">str()</span></code> and <code class="code docutils literal notranslate"><span class="pre">repr()</span></code></p></li>
-<li><p>Make the linkedlist able to being added with another linkedlist using the <code class="code docutils literal notranslate"><span class="pre">+</span></code> operator</p></li>
-<li><p>Multiply the list x times <code class="code docutils literal notranslate"><span class="pre">llist</span> <span class="pre">*</span> <span class="pre">3</span></code></p></li>
+<li><p>Create a JellyBean class.</p></li>
+<li><p>When initialized you will create a jelly bean with a mass.</p></li>
+<li><p>You should be able to add 2 jelly beans together thus the mass of the one of them will increese.</p></li>
+<li><p>The mass of the other one will be 0, and should not remember its former state.</p></li>
+<li><p>The class should also be able to deduct 2 jelly beans. If a gas like jelly bean hit your jelly bean it should regain its former mass and yours should decrease.</p></li>
+<li><p>The object should be able to when asked tell its state.</p></li>
 </ul>
-<p>Remember that a very good description of these underscore methods can be found in this weeks reading materials.</p>
+<div class="section" id="x-tra-assignemnets">
+<h3>X-tra assignemnets:<a class="headerlink" href="#x-tra-assignemnets" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>The “gas like Jelly Beans” will over time gain a little mass. Small jelly fragments are lying around and can be added with the plus operator to. the fragments are not objects of the Jelly Bean Class but of another more simple class called Jelly_fragment. This class has a fixed mass of 1, and it should not be changed. If the Jelly Bean “Ghost” at some poit regain they old mass they are only allowed to keep “over time gained mass” corosponding to 2% of the original mass. If it succeceds it is discarded. Add the functionallity of being able to write this code in the client.</p></li>
+</ul>
+<ul class="simple">
+<li><p>You can already write <code class="code docutils literal notranslate"><span class="pre">me</span> <span class="pre">==</span> <span class="pre">j2</span></code> -&gt; and get a return value of True or False.</p></li>
+<li><p>Create an implementation that when writing <code class="code docutils literal notranslate"><span class="pre">me</span> <span class="pre">==</span> <span class="pre">j2</span></code> checks if the mass of the 2 objects are alike.</p></li>
+<li><p>Create an implementation that when writing <code class="code docutils literal notranslate"><span class="pre">me</span> <span class="pre">&lt;</span> <span class="pre">j2</span></code> checks if the mass of ‘me’ is less than ‘j2’.</p></li>
+<li><p>Do the same for <code class="code docutils literal notranslate"><span class="pre">&gt;,</span> <span class="pre">!=,</span> <span class="pre">&lt;=,</span> <span class="pre">&gt;=</span></code></p></li>
+</ul>
+</div>
 </div>
 </div>
 

@@ -4,6 +4,7 @@ Exercise: Protocol - linked-list
 In python there is not a build in linked list. If you want to use this datastructure, you either have to make it yourself or import a module (where someone else did it for you.). 
 
 You should chose the first option: create it yourself.
+
 .. raw:: html
 
    <hr>
@@ -11,7 +12,7 @@ You should chose the first option: create it yourself.
 Definition of a linked list
 ---------------------------
 
-A liked list consists of Node objects with 2 instance variables (data and next).
+A linked list consists of Node objects with 2 instance variables (data and next).
 
 .. code:: python
    :linenos:
@@ -42,11 +43,32 @@ You can assign Nodes to the list like:
 
 Task
 ----
+The Linked List should on a higher level behave like the build in List object. So you could in your interpretor type 
 
-        * Make you LinkeList able to tell its length if :code:`len(llist)` is called.
-        * You should be able to access the lists elements like this :code:`llist[1]` and :code:`llist[-1]`
-        * The list should be able to handle slicing syntax :code:`llist[1:4]`
-        * The list should be able to add new items using the set item syntax :code:`llist[3] = Node(3)`
-        * The llinkedList should be able to return a string representation of its state when calling :code:`str()` and :code:`repr()`
-        * Make the linkedlist able to being added with another linkedlist using the :code:`+` operator
-        * Multiply the list x times :code:`llist * 3`
+
+.. code:: bash
+
+   >>> help(list)
+
+
+The underscore methods (__add__ etc.) you can see in the documentation using help(list) should be implemented in your LinkedList (or at least as many as possible)
+
+A description of the implemented methods and their behaviour can be seen here:
+
+.. image:: ../_static/list_tup1.png
+
+.. image:: ../_static/list_tup2.png
+
+
+The features described below should for sure be implement.  
+   
+* Make you LinkeList able to tell its length if :code:`len(llist)` is called.
+* You should be able to access the lists elements like this :code:`llist[1]` and :code:`llist[-1]`
+* The list should be able to handle slicing syntax :code:`llist[1:4]` and :code:`llist[-1:-4:-1]` 
+* The list should be able to add new items using this syntax :code:`llist[3] = Node(3)`
+* The llinkedList should be able to return a string representation of its state when calling :code:`str()` and :code:`repr()`
+* Make the linkedlist able to being added with another linkedlist using the :code:`+` operator
+* Multiply the list x times :code:`llist * 3`
+
+
+Remember that a very good description of these underscore methods can be found in this weeks reading materials.

@@ -433,7 +433,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "# \\__underscore__ methods\n",
+    "# Datamodel\n",
     "Read about this: [A Guide to Python's Magic Methods](https://rszalski.github.io/magicmethods/)"
    ]
   },
@@ -441,8 +441,9 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "&gt; **Protocol:**   \n",
-    "**Top-level function or top-level syntax has a corosponding \\__function__()** "
+    "**Protocol:**   \n",
+    "\n",
+    "Top-level function or top-level syntax has a corosponding \\__function__() "
    ]
   },
   {
@@ -456,12 +457,12 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "&gt; When you initialize and object, there is a corosponding \\__init__() function"
+    "When you initialize and object, there is a corosponding \\__init__() function"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 19,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -483,7 +484,7 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "&gt; If you want a string representation of the object (the objects state), you call the top-level function **repr()** which has a corosponding implementation of **\\__repr__**"
+    "If you want a string representation of the object (the objects state), you call the top-level function *repr()* which has a corosponding implementation of \\__repr__"
    ]
   },
   {
@@ -525,14 +526,14 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "&gt; Python has 2 options of printing a string representation. **repr()** and **str()**.  \n",
-    "&gt; They do the same thing, but str() gives an informal string representation of the object, repr() gives a formal.  \n",
-    "&gt; This means that str() is used for creating output for end user, repr() is mainly used for debugging and development."
+    "Python has 2 options of printing a string representation. **repr()** and **str()**.    \n",
+    "They do the same thing, but str() gives an informal string representation of the object, repr() gives a formal.  \n",
+    "This means that str() is used for creating output for end user, repr() is mainly used for debugging and development."
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [
     {
@@ -541,7 +542,7 @@
        "'Name: Anna'"
       ]
      },
-     "execution_count": 21,
+     "execution_count": 2,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -572,12 +573,12 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "&gt; 2 lists can be added together by using the **+** operator"
+    "2 lists can be added together by using the **+** operator"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 22,
+   "execution_count": 3,
    "metadata": {},
    "outputs": [
     {
@@ -586,7 +587,7 @@
        "[1, 2, 3, 4, 5, 6]"
       ]
      },
-     "execution_count": 22,
+     "execution_count": 3,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -602,13 +603,13 @@
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "&gt; this is because the list class has implemented the **\\__add__()** function.  \n",
-    "&gt; You can do the same in your custorm objects."
+    "this is because the list class has implemented the **\\__add__()** function.  \n",
+    "You can do the same in your custorm objects."
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 23,
+   "execution_count": 4,
    "metadata": {},
    "outputs": [
     {
@@ -617,7 +618,7 @@
        "'Name: Claus Anna'"
       ]
      },
-     "execution_count": 23,
+     "execution_count": 4,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -639,11 +640,96 @@
    ]
   },
   {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Indexed objects"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "A list in python can be accessed like with this syntax:"
+   ]
+  },
+  {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1[2]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "This is because a list implements the method"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
    "metadata": {},
    "outputs": [],
-   "source": []
+   "source": [
+    "def __getitem__(self):\n",
+    "    pass"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Your own object if implementing this method it can have the same behaviour"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "class Deck:\n",
+    "    def __init__(self):\n",
+    "        self.cards = ['A', 'K', 4, 7]\n",
+    "    def __getitem__(self, key):\n",
+    "        return self.cards[key]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "d = Deck()\n",
+    "d[3]"
+   ]
   }
  ],
  "metadata": {
@@ -662,12 +748,12 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.7.6"
+   "version": "3.7.7"
   },
   "toc": {
    "base_numbering": 1,
    "nav_menu": {},
-   "number_sections": true,
+   "number_sections": false,
    "sideBar": true,
    "skip_h1_title": true,
    "title_cell": "Table of Contents",

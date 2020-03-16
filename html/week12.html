@@ -94,7 +94,10 @@
 <li class="toctree-l1"><a class="reference internal" href="week11.html">Week 11 - Encapsulation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Week 12 - The python datamodel</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ex1-deck-of-cards">Ex1: Deck of cards</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="week13.html">Week 13 - Decorators</a></li>
@@ -196,20 +199,49 @@
 </style>
 <div class="section" id="week-12-the-python-datamodel">
 <h1>Week 12 - The python datamodel<a class="headerlink" href="#week-12-the-python-datamodel" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Today is the first day of online teachings.
+At 8:30 you should log in with your kea credentials at <a class="reference external" href="http://teams.microsoft.com">http://teams.microsoft.com</a>. This will be our classroom for the next weeks.</p>
+</div>
 <div class="sidebar">
 <p class="sidebar-title">Learning goals</p>
-<p class="sidebar-subtitle">After this week you will be able to:</p>
-<blockquote>
-<div><ul class="simple">
-<li></li>
-</ul>
-</div></blockquote>
+<p>Create your own classes, that behave like any other Python Object</p>
 </div>
+<p>Today we will look at the python data model.</p>
+<p>After this you will be able to implement code in own classes that allow you to use python built-in functions to interact with these object.</p>
+<p><strong>Example:</strong></p>
+<p>If you want to be able to use the build in function <code class="code docutils literal notranslate"><span class="pre">len()</span></code> on your object you should implement the <code class="code docutils literal notranslate"><span class="pre">__len__</span></code> method in your class.</p>
+<p>If you want to be able to use the <code class="code docutils literal notranslate"><span class="pre">==</span></code> operator on your object you should implement the <code class="code docutils literal notranslate"><span class="pre">__eq__</span></code> method in your class.</p>
+<p>If you want to be able to use the <code class="code docutils literal notranslate"><span class="pre">in</span></code> key word on your object you should implement the <code class="code docutils literal notranslate"><span class="pre">__contains__</span></code> method in your class.</p>
 <div class="section" id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://rszalski.github.io/magicmethods/">A Guide to Python’s Magic Methods</a></p></li>
+<li><p><a class="reference internal" href="notebooks/OOP_Encapsulation_Propeties.html#Datamodel"><span class="std std-ref">Notebook on Datamodel</span></a></p></li>
+<li><p><a class="reference external" href="../week12/code_from_today/">Code from today</a></p></li>
+</ul>
 </div>
 <div class="section" id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ex1-deck-of-cards">
+<h3>Ex1: Deck of cards<a class="headerlink" href="#ex1-deck-of-cards" title="Permalink to this headline">¶</a></h3>
+<p>Continue with the deck example and implement the</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">__len__</span></code> method</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">__add__</span></code> method</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">__repr__</span></code> method</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">__str__</span></code> method</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">__setitem__</span></code> method</p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">__delitem__</span></code> method</p></li>
+</ul>
+<p>We look at this together in a short while.</p>
+<p>When you a done, take a look at the 2 exercises below and ask your questions when we meet.</p>
+<hr><ul class="simple">
+<li><p><a class="reference internal" href="exercises/protocol_linked_list.html"><span class="doc">Linked List</span></a></p></li>
+<li><p><a class="reference internal" href="exercises/JellyBeans.html"><span class="doc">Jelly Beans</span></a></p></li>
+</ul>
+</div>
 </div>
 </div>
 
