@@ -22,9 +22,8 @@ Add the abillity in your code to overload one or more init methods
 
 class Bank:
 
-    def __init__(self, name):
-        self.accounts = {}
-        self.name = name
+    def __init__(self):
+        self.accounts = []
 
     def __repr__(self):
         return str(self.__dict__)

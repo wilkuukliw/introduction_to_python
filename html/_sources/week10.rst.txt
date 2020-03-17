@@ -20,7 +20,7 @@ Materials
 * `Python args and kwargs: Demystified <https://realpython.com/python-kwargs-and-args/>`_
 * `doctest — Test interactive Python examples <https://docs.python.org/3/library/doctest.html>`_
 * `Notebook on classes <notebooks/class_notes.ipynb>`_
-
+* `Code from teachings <../week10/code_from_today/>`_
 Exercises
 ---------
 
@@ -33,6 +33,8 @@ Exercises
 -------------------
 EX 1: Bank Exercise 
 -------------------
+
+`Solution <../week10/exercises/solution/bank.py>`_
 
 Create a Bank, an Account, and a Customer class.
 
@@ -63,6 +65,8 @@ When you are done you should hand in you solution on fronter. You should after t
 ----------------
 Ex 2: Angry Bird
 ----------------
+
+`Solution <../week10/exercises/solution/angry_bird.py>`_
 
 In this exercises you are going to create a simple terminal version of this `Angry Bird online coding teaching tool for kids <https://studio.code.org/hoc/1>`_ .
 
