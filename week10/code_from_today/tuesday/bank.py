@@ -13,11 +13,8 @@ class Account:
 
 class Customer:
     """ Create a Customer with name param  
-
     >>> c.name
     
-
-
     """
 
     def __init__(self, name):
@@ -25,28 +22,7 @@ class Customer:
 
 
 
-bank = Bank()
-bank.accounts.appends(Account(123, Customer('Clus')))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#bank = Bank()
+#bank.accounts.appends(Account(123, Customer('Clus')))
 
 
