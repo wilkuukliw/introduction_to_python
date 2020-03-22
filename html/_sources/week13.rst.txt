@@ -46,13 +46,38 @@ Materials
 
 * `Primer on Python Decorators <https://realpython.com/primer-on-python-decorators/>`_
 * `Python Inner Functions—What Are They Good For? <https://realpython.com/inner-functions-what-are-they-good-for/>`_
-
+* `Notebook on Decorators <notebooks/Decorators.ipynb>`_
 Exercises
 ---------
-
+* :ref:`Small exercises <exsm>`
 * :ref:`Ex1: Time it <ex1>`
 * :ref:`Ex2: memory-profiler <ex2>`
 * :ref:`Ex3: Slow down code <ex3>`
+
+.. _exsm:
+
+---------------
+Small Exercises
+---------------
+
+With this function as a starting point 
+
+.. code:: python
+   :linenos:
+
+   def add(*args):
+        sum = 0     
+        for i in args:
+            sum += i          
+       return i 
+
+1. Write a decorator that writes to a log file the time stamp of each time this function is called.
+2. Change the log decorator to also printing the values of the argument together with the timestamp.
+3. Print the result of the decorated function to the log file also. 
+4. Create a new function and call it printer(text) that takes a text as parameter and either returns or prints the text 2 times. Decorate it with your logfunction. Does it work?    
+
+
+
 
 .. _ex1:  
 
