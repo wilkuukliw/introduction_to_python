@@ -40,6 +40,8 @@ Exercises
 Ex1: Deck of cards
 ------------------
 
+`Solution <../week12/exercises/solution/deck_solution.py>`_
+
 Continue with the deck example and implement the 
 
 * :code:`__len__` method
@@ -58,5 +60,5 @@ When you a done, take a look at the 2 exercises below and ask your questions whe
    
    <hr>
 
-* `Linked List <exercises/protocol_linked_list.rst>`_
-* `Jelly Beans <exercises/JellyBeans.rst>`_
+* `Linked List <exercises/protocol_linked_list.rst>`_  (`Solution <../week12/exercises/solution/linked_list.py>`_)
+* `Jelly Beans <exercises/JellyBeans.rst>`_ (`Solution <../week12/exercises/solution/jelly.py>`_)

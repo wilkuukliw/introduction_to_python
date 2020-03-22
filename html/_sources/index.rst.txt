@@ -27,7 +27,6 @@ Elective website for the "Introduction to python spring 2020" at KEA, Copenhagen
    week13
    week14
    week16
-   week17
    week18
    week19
    week20

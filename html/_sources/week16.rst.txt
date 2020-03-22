@@ -1,18 +1,50 @@
-Week 16 - Static website generation
-===================================
+Week 16 & 17 Mandatory Assignment 
+=================================
+
+Static website generation
+-------------------------
 
 .. sidebar:: Learning goals
-    :subtitle: After this week you will be able to:
-        
-        - 
+
+   - 
+
+
+For the next 2 weeks you will be working on a mandatory assignment. We will still have teachings, but it will be shorter and it will cover some of the topics that you should use in this mandatory assignment. There will be no other exercises than this mandatory assignment.
+
+The requirements for this mandatory assignment you can find underneath in the :ref:`Assignment <assign>` section, and you can also find it as a pdf on fronter.
+
+The hand in should be on fronter in a folder called Mandatory Assignment. Be sure to read and understand all the requirements for handing in and getting the assignment aproved.
 
 
 Materials
 ---------
+* `Introduction Static Website Generation <>`_
+
+
+.. _assign:
+
+Assignment
+----------
+
+* `Mandatory Assignment <>`_
 
 
 
+.. Todo:
 
-Exercises
----------
+   * Læringsmål
+       * You should use an existing template (and it should be another one than the default), You should make modifications to this template.
 
+
+   * Description of end result:
+        * Video presentation - hand in on fronter, peer review
+                * should contain a short demo of the site 
+                * Show that you implemented all requirements frontend and/or code.
+        * github pages link 
+        * Template 
+   * Description of what SWG is
+   * Demo of Sphinx
+       * Install 
+       * Virtual Enviroment
+       * How to use it
+   * Panopto of teachings (reason, no monday class)

@@ -1,5 +1,5 @@
-Week 18 - Tips & Tricks 
-=======================
+Week 18 - Context managers
+==========================
 
 .. sidebar:: Learning goals
     :subtitle: After this week you will be able to:
