@@ -69,7 +69,7 @@ With this function as a starting point
         sum = 0     
         for i in args:
             sum += i          
-       return i 
+       return sum 
 
 1. Write a decorator that writes to a log file the time stamp of each time this function is called.
 2. Change the log decorator to also printing the values of the argument together with the timestamp.
