@@ -1,7 +1,5 @@
-.. _week14:
-
-Week 14 - Generators
-====================
+Week 14 - Generators & Comprehensions
+=====================================
 
 .. sidebar:: Learning goals
     :subtitle: After this week you will be able to:
@@ -12,13 +10,6 @@ Week 14 - Generators
 Materials
 ---------
 
-==== ===== ========= =========
-Week Topic Materials Exercises
-==== ===== ========= =========
-1    Test  test mat  Test exer
-2    TEST  KLKLK kl  kjlkjadl 
-3    kdfj  sfdjlfkj   sdfjljsd
-==== ===== ========= =========
 
 Exercises
 ---------
