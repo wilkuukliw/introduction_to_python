@@ -7,10 +7,5 @@ def msg():
         print(sys.argv[1], 'you are not in')
     else:
         print('NOP NO NO ')
-        function_that_does_not_existst()
 
 msg()
-    
-
-
-

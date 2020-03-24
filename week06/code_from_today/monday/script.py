@@ -8,8 +8,7 @@ def main():
     elif sys.argv[1] == 'Hans':
         print(sys.argv[1], 'your Cool')
     else:
-        this_function_does_not_exits()
-    
+        print('no no no')    
 
 main()
 

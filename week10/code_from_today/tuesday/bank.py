@@ -23,6 +23,6 @@ class Customer:
 
 
 #bank = Bank()
-#bank.accounts.appends(Account(123, Customer('Clus')))
+#bank.accounts.append(Account(123, Customer('Claus')))
 
 

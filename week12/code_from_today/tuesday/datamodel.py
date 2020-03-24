@@ -6,7 +6,7 @@ class A:
 
     def __len__(self):
         return len(self.name)
-
+        
     def __add__(self, other):
         self.name + other.name
 
@@ -18,7 +18,3 @@ class A:
 
     def __getitem__ (self, key):
         return self.name[key]
-
-    
-
-

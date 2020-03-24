@@ -66,15 +66,15 @@ class C(A, B):
 
 
 
-bank = Bank('Claus')
-cust = Customer('Claus')
-acc = Account('1234', cust)
-"""
-bank.account[cust] = acc
+#bank = Bank('Claus')
+#cust = Customer('Claus')
+#acc = Account('1234', cust)
+#"""
+#bank.account[cust] = acc
 
-bank.add_account(cust, acc)
+#bank.add_account(cust, acc)
 
-"""
+#"""
 
 
 

@@ -25,10 +25,6 @@ class Account:
         self.no = no
         self.cust = cust
 
-class Customer:
-    def __init__(self, name):
-        self.name = name
-
 """
 ## Overloading
 Add the abillity in your code to overload one or more init methods
@@ -39,10 +35,10 @@ class Customer:
         if len(args) == 1:
             self.name = args[0]
 
-      elif len(args) == 2:
+        elif len(args) == 2:
             self.name = args[0]
             self.age = args[1]
-      else:
+        else:
             self.name = args[0]
             self.age = args[1]
             self.gender = [2]
