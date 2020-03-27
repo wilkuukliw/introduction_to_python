@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Week 14 - Generators &amp; Comprehensions &mdash; Introduction to python 0.0.1 documentation</title>
+  <title>Week 14 - Comprehensions &mdash; Introduction to python 0.0.1 documentation</title>
   
 
   
@@ -37,7 +37,7 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Week 16 &amp; 17 Mandatory Assignment" href="week16.html" />
+    <link rel="next" title="Week 16 - Generators" href="week16.html" />
     <link rel="prev" title="Week 13 - Decorators" href="week13.html" /> 
 </head>
 
@@ -94,14 +94,18 @@
 <li class="toctree-l1"><a class="reference internal" href="week11.html">Week 11 - Encapsulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="week12.html">Week 12 - The python datamodel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="week13.html">Week 13 - Decorators</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Week 14 - Generators &amp; Comprehensions</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Week 14 - Comprehensions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#materials">Materials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercises">Exercises</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#list-comprehension-chalenges">List Comprehension chalenges.</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="week16.html">Week 16 &amp; 17 Mandatory Assignment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="week18.html">Week 18 - Context managers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="week19.html">Week 19 - Tips &amp; Tricks II</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="week16.html">Week 16 - Generators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week17.html">Week 17 - Context Managers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week18.html">Week 18 - Mandatory Assignment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week19.html">Week 19 - Feedback: Mandatory assignment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="week20.html">Week 20 - Exam preperation &amp; Recap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="week21.html">Week 21 - Exam preperation &amp; Recap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="week22.html">Week 22 - Exam preperation &amp; Recap</a></li>
@@ -150,7 +154,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Week 14 - Generators &amp; Comprehensions</li>
+      <li>Week 14 - Comprehensions</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -193,22 +197,97 @@
     text-align: unset;
 }
 </style>
-<div class="section" id="week-14-generators-comprehensions">
-<h1>Week 14 - Generators &amp; Comprehensions<a class="headerlink" href="#week-14-generators-comprehensions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="week-14-comprehensions">
+<h1>Week 14 - Comprehensions<a class="headerlink" href="#week-14-comprehensions" title="Permalink to this headline">¶</a></h1>
 <div class="sidebar">
 <p class="sidebar-title">Learning goals</p>
 <p class="sidebar-subtitle">After this week you will be able to:</p>
 <blockquote>
 <div><ul class="simple">
-<li></li>
+<li><p>Use comprehensions instead of loops and list assignments in you python code.</p></li>
 </ul>
 </div></blockquote>
 </div>
+<p>This weeks topic is Comprehensions. Our main focus will be on List Comprehensions, but will also cover set, tuple and dict comprehensions.
+The learning goal for this you can read in the sidebar, and the way to achieve this goal is to read and understand the materials, and do the exercises. To check yourself wheter or not your reached this goal, you should have a look at the solutions for the exercises and check this agains your solution.</p>
 <div class="section" id="materials">
 <h2>Materials<a class="headerlink" href="#materials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="notebooks/Comprehensions.html"><span class="doc">Notebook on List Comprehensions</span></a></p></li>
+<li><p><a class="reference internal" href="notebooks/more_on_comp.html"><span class="doc">Notebook on other Comprehension types</span></a></p></li>
+</ul>
 </div>
 <div class="section" id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="list-comprehension-chalenges">
+<h3>List Comprehension chalenges.<a class="headerlink" href="#list-comprehension-chalenges" title="Permalink to this headline">¶</a></h3>
+<p>All the below exercieses, unless something else is stated, should be solved using:</p>
+<ol class="arabic simple">
+<li><p>a normal for loop</p></li>
+<li><p>a list comprehension</p></li>
+</ol>
+<p>You should also run the ‘timer’ and ‘memory usage’ decorators on your new functions. (these where the exercises last week)</p>
+<p>Try to see if you in anyway can optimize you code. (It is a good idea to test your solutions with large numbers and see how they react)</p>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29</pre></div></td><td class="code"><div class="highlight"><pre><span></span>     <span class="c1"># 1. Find all of the numbers from 1-1000 that are divisible by 7</span>
+     <span class="nd">@timer</span>
+     <span class="nd">@profile</span>
+     <span class="k">def</span> <span class="nf">divisible_by_7_loop</span><span class="p">():</span>
+             <span class="k">pass</span>
+
+
+     <span class="nd">@timer</span>
+     <span class="nd">@profile</span>
+     <span class="k">def</span> <span class="nf">divisible_by_7_comp</span><span class="p">():</span>
+             <span class="k">pass</span>
+
+
+
+     <span class="c1"># 2. Find all of the numbers from 1-1000 that have a 3 in them</span>
+
+     <span class="c1"># 3. Count the number of spaces in a string</span>
+
+     <span class="c1"># 4. Remove all of the vowels in a string</span>
+
+     <span class="c1"># 5. In a string made up of randomly generated words, generate a list of all words that have less than 4 letters</span>
+
+     <span class="c1"># 6. Use a dictionary comprehension to count the length of each word in a sentence.</span>
+
+     <span class="c1"># 7. Use a nested list comprehension to find all of the numbers from 1-1000 that are divisible by any single digit besides 1 (2-9)</span>
+
+     <span class="c1"># 8. For all the numbers 1-1000, use a nested list comprehension to find the highest single digit any of the numbers is divisible by</span>
+
+     <span class="c1"># 9. Multiples of 3 and 5: If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</span>
+</pre></div>
+</td></tr></table></div>
+</div>
 </div>
 </div>
 
@@ -220,7 +299,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="week16.html" class="btn btn-neutral float-right" title="Week 16 &amp; 17 Mandatory Assignment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="week16.html" class="btn btn-neutral float-right" title="Week 16 - Generators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="week13.html" class="btn btn-neutral float-left" title="Week 13 - Decorators" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

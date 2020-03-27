@@ -1,0 +1,20 @@
+Week 17 - Context Managers
+==========================
+
+.. sidebar:: Learning goals
+
+   - 
+
+Materials
+---------
+
+Exercises
+---------
+
+.. todo::
+
+   * dataclasses - @dataclass - decorator for fast creation of classes
+     * decorator classes. 
+       * __call__() method implementation
+         * show the add() example:q
+
