@@ -99,21 +99,35 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# dict = {key:value for (key,value) in dictonary.items()}\n",
+    "\n",
+    "dict1 = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}\n",
+    "# Double each value in the dictionary\n",
+    "double_dict1 = {k:v*2 for (k,v) in dict1.items()}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
    "metadata": {},
    "outputs": [
     {
-     "ename": "SyntaxError",
-     "evalue": "invalid syntax (<ipython-input-15-674747163845>, line 2)",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-15-674747163845>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    [i for i in d  {k:v for (k, v) in d.items()}]\u001b[0m\n\u001b[0m                   ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
-     ]
+     "data": {
+      "text/plain": [
+       "{'a': 2, 'b': 4, 'c': 6, 'd': 8, 'e': 10}"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
     }
    ],
    "source": [
-    "d = [{\"name\": \"Claus\", \"age\": 120}, {\"name\": \"ANna\", \"age\": 32}]\n",
-    "{k:v for (k, v) in d.items()}]"
+    "double_dict1"
    ]
   },
   {
@@ -121,10 +135,7 @@
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-   "source": [
-    "d = [{\"name\": \"Claus\", \"age\": 120}, ]\n",
-    "{k:v for (k, v) in d.items() }"
-   ]
+   "source": []
   },
   {
    "cell_type": "code",
@@ -150,7 +161,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.7.5"
+   "version": "3.7.7"
   },
   "toc": {
    "base_numbering": 1,

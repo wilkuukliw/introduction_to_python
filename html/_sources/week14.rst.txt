@@ -20,9 +20,25 @@ Materials
 Exercises
 ---------
 
------------------------------
-List Comprehension chalenges.
------------------------------
+--------------------
+Ex 1: Basic listcomp
+--------------------
+
+1. Create a list of capital letters from the english alphabet.
+2. Do the same, but exclude the 4 with the Unicode code point of 70, 75, 80 and 85.
+3. Create a list of capital letters, but exclude every second between F & O
+4. Create something that prints 
+
+.. code:: python
+   
+   ['un-even and small', 2, 'un-even and small', 4, 
+   'un-even and large', 6, 'un-even and large', 8, 
+   'un-even and large']
+
+
+-----------------------------------
+Ex 2: List Comprehension chalenges.
+-----------------------------------
 
 All the below exercieses, unless something else is stated, should be solved using: 
 

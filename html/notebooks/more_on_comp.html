@@ -477,26 +477,35 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="section" id="Dict-comprehension">
 <h2>Dict comprehension<a class="headerlink" href="#Dict-comprehension" title="Permalink to this headline">¶</a></h2>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>d = [{&quot;name&quot;: &quot;Claus&quot;, &quot;age&quot;: 120}, {&quot;name&quot;: &quot;ANna&quot;, &quot;age&quot;: 32}]
-{k:v for (k, v) in d.items()}]
+<span></span># dict = {key:value for (key,value) in dictonary.items()}
+
+dict1 = {&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3, &#39;d&#39;: 4, &#39;e&#39;: 5}
+# Double each value in the dictionary
+double_dict1 = {k:v*2 for (k,v) in dict1.items()}
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>double_dict1
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-15-674747163845&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">2</span>
-<span class="ansi-red-fg">    [i for i in d  {k:v for (k, v) in d.items()}]</span>
-                   ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-
+{&#39;a&#39;: 2, &#39;b&#39;: 4, &#39;c&#39;: 6, &#39;d&#39;: 8, &#39;e&#39;: 10}
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
@@ -504,8 +513,7 @@ div.rendered_html tbody tr:hover {
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>d = [{&quot;name&quot;: &quot;Claus&quot;, &quot;age&quot;: 120}, ]
-{k:v for (k, v) in d.items() }
+<span></span>
 </pre></div>
 </div>
 </div>
