@@ -64,12 +64,6 @@ Ex 3: Deck of Cards
    [('A','♠'), ('K','♣'), ... ] etc.
 
 
-2. Create a listcomp that produces a list of Card objects containing all card in a deck. When printing out the list you should see the following.
-
-.. code:: python
-
-   ['A♠', 'K♣', ... ] etc.
-
 -----------------------------------
 Ex 4: List Comprehension chalenges.
 -----------------------------------

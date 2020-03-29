@@ -11,4 +11,11 @@ You should make and show (in class or to Claus) an exam presentation of your own
 * Show in class
 
 
+.. todo::
 
+   Create a listcomp that produces a list of Card objects containing all card in a deck. When printing out the list you should see the following.
+
+   ['A♠', 'K♣', ... ] etc.
+
+
+   
