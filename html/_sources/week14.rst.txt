@@ -36,8 +36,42 @@ Ex 1: Basic listcomp
    'un-even and large']
 
 
+--------------------
+Ex 2: Basic Dictcomp
+--------------------
+
+1. Create a dictionary containing a deck of cards. The keys should be the elements from the colors set and the values should be the elements from the numbers list as a set.
+
+.. code:: python
+
+   colors = {'♠', '♡', '♢', '♣'}
+   numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A']
+
+   # The result should be like this:
+   {'♢': {10, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'J', 'K', 'Q'},
+    '♡': {10, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'J', 'K', 'Q'},
+    '♣': {10, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'J', 'K', 'Q'},
+    '♠': {10, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'J', 'K', 'Q'}}
+
+-------------------
+Ex 3: Deck of Cards
+-------------------
+
+1. Create a listcomp that produces a list of tuples containing all card in a deck. 
+
+.. code:: python
+
+   [('A','♠'), ('K','♣'), ... ] etc.
+
+
+2. Create a listcomp that produces a list of Card objects containing all card in a deck. When printing out the list you should see the following.
+
+.. code:: python
+
+   ['A♠', 'K♣', ... ] etc.
+
 -----------------------------------
-Ex 2: List Comprehension chalenges.
+Ex 4: List Comprehension chalenges.
 -----------------------------------
 
 All the below exercieses, unless something else is stated, should be solved using: 
