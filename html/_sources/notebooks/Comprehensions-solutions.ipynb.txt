@@ -109,10 +109,48 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 6,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['A',\n",
+       " 'B',\n",
+       " 'C',\n",
+       " 'D',\n",
+       " 'E',\n",
+       " 'F',\n",
+       " 'G',\n",
+       " 'H',\n",
+       " 'I',\n",
+       " 'J',\n",
+       " 'K',\n",
+       " 'L',\n",
+       " 'M',\n",
+       " 'N',\n",
+       " 'O',\n",
+       " 'P',\n",
+       " 'Q',\n",
+       " 'R',\n",
+       " 'S',\n",
+       " 'T',\n",
+       " 'U',\n",
+       " 'V',\n",
+       " 'W',\n",
+       " 'X',\n",
+       " 'Y',\n",
+       " 'Z']"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[chr(i) for i in range(65, 91)]"
+   ]
   },
   {
    "cell_type": "markdown",
@@ -167,10 +205,44 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 11,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['A',\n",
+       " 'B',\n",
+       " 'C',\n",
+       " 'D',\n",
+       " 'E',\n",
+       " 'G',\n",
+       " 'H',\n",
+       " 'I',\n",
+       " 'J',\n",
+       " 'L',\n",
+       " 'M',\n",
+       " 'N',\n",
+       " 'O',\n",
+       " 'Q',\n",
+       " 'R',\n",
+       " 'S',\n",
+       " 'T',\n",
+       " 'V',\n",
+       " 'W',\n",
+       " 'X',\n",
+       " 'Y',\n",
+       " 'Z']"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[chr(i) for i in range(65, 91) if i not in [70, 75, 80, 85] ]"
+   ]
   },
   {
    "cell_type": "markdown",
@@ -181,10 +253,43 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 16,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['A',\n",
+       " 'B',\n",
+       " 'C',\n",
+       " 'D',\n",
+       " 'E',\n",
+       " 'G',\n",
+       " 'I',\n",
+       " 'K',\n",
+       " 'M',\n",
+       " 'O',\n",
+       " 'P',\n",
+       " 'Q',\n",
+       " 'R',\n",
+       " 'S',\n",
+       " 'T',\n",
+       " 'U',\n",
+       " 'V',\n",
+       " 'W',\n",
+       " 'X',\n",
+       " 'Y',\n",
+       " 'Z']"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[chr(i) for i in range(65, 91) if i not in range(70, 80, 2)]"
+   ]
   },
   {
    "cell_type": "markdown",
@@ -371,11 +476,30 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": 28,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('Black', 's'),\n",
+       " ('Black', 'm'),\n",
+       " ('Black', 'l'),\n",
+       " ('Black', 'xl'),\n",
+       " ('White', 's'),\n",
+       " ('White', 'm'),\n",
+       " ('White', 'l'),\n",
+       " ('White', 'xl')]"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
-    "# exercise\n"
+    "# exercise\n",
+    "[(i,j) for i in colors for j in sizes]"
    ]
   },
   {
@@ -387,13 +511,66 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 33,
+   "execution_count": 30,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('Black', 's'),\n",
+       " ('Black', 'l'),\n",
+       " ('Black', 'xl'),\n",
+       " ('White', 'm'),\n",
+       " ('White', 'l'),\n",
+       " ('White', 'xl')]"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "soled_out = [('Black', 'm'), ('White', 's')]\n",
-    "# listcomp goes here\n"
+    "# listcomp goes here\n",
+    "[(i,j) for i in colors for j in sizes if (i,j) not in soled_out]"
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Nested list comprehension\n",
+    "Comprehensions can contain nested comprehensions.  \n",
+    "The following shows the basic structure of a list comprehension containig a list comprehension:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[(0, 1)]"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[(i, j) for i in [j for j in range(j)]]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
