@@ -16,6 +16,7 @@ Materials
 
 * `Notebook on List Comprehensions <notebooks/Comprehensions.ipynb>`_
 * `Notebook on other Comprehension types <notebooks/more_on_comp.ipynb>`_
+* `Code from today <../week14/code_from_today/>`_
 
 Exercises
 ---------

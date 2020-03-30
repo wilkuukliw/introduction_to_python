@@ -12,7 +12,11 @@ You should make and show (in class or to Claus) an exam presentation of your own
 
 
 .. todo::
+   
+   dictcomp
+   Create a dictcomp with all unique words from the file sample.txt as keys and the count of every word as values. This is equevalent to the exercise you did in week 8, but now done with by th euse of a dict comp.
 
+   List comp
    Create a listcomp that produces a list of Card objects containing all card in a deck. When printing out the list you should see the following.
 
    ['A♠', 'K♣', ... ] etc.
