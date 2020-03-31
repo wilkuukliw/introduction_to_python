@@ -24,6 +24,8 @@ Exercises
 --------------------
 Ex 1: Basic listcomp
 --------------------
+`Solutions <notebooks/Comprehensions.ipynb>`_
+
 
 1. Create a list of capital letters from the english alphabet.
 2. Do the same, but exclude the 4 with the Unicode code point of 70, 75, 80 and 85.
