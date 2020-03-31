@@ -822,7 +822,7 @@ l
 </pre></div></div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[69]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -831,27 +831,66 @@ sizes = [&#39;s&#39;, &#39;m&#39;, &#39;l&#39;, &#39;xl&#39;]
 </pre></div>
 </div>
 </div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span># exercise
-
+[(i,j) for i in colors for j in sizes]
 </pre></div>
 </div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[71]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[(&#39;Black&#39;, &#39;s&#39;),
+ (&#39;Black&#39;, &#39;m&#39;),
+ (&#39;Black&#39;, &#39;l&#39;),
+ (&#39;Black&#39;, &#39;xl&#39;),
+ (&#39;White&#39;, &#39;s&#39;),
+ (&#39;White&#39;, &#39;m&#39;),
+ (&#39;White&#39;, &#39;l&#39;),
+ (&#39;White&#39;, &#39;xl&#39;)]
+</pre></div></div>
 </div>
 <ol class="arabic simple" start="2">
 <li><p>If the tuple pair is in the following list, it should not be added to the comprehension generated list.</p></li>
 </ol>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span>soled_out = [(&#39;Black&#39;, &#39;m&#39;), (&#39;White&#39;, &#39;s&#39;)]
 # listcomp goes here
-
+[(i,j) for i in colors for j in sizes if (i,j) not in soled_out]
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[73]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[(&#39;Black&#39;, &#39;s&#39;),
+ (&#39;Black&#39;, &#39;l&#39;),
+ (&#39;Black&#39;, &#39;xl&#39;),
+ (&#39;White&#39;, &#39;m&#39;),
+ (&#39;White&#39;, &#39;l&#39;),
+ (&#39;White&#39;, &#39;xl&#39;)]
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>
 </pre></div>
 </div>
 </div>
