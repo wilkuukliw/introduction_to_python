@@ -425,7 +425,7 @@ div.rendered_html tbody tr:hover {
 </div><p>l = [x for x in [1, 2, 3, 4]] l</p>
 <p>So a for loop looking like this:</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -437,7 +437,7 @@ l
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[58]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -717,19 +717,20 @@ l
 <h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Comprehensions can contain elif conditions.</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span># exercise
-# create something that prints
+<span></span># create something that prints
 # [&#39;un-even and small&#39;, 2, &#39;un-even and small&#39;, 4, &#39;un-even and large&#39;, 6, &#39;un-even and large&#39;, 8, &#39;un-even and large&#39;]
+
+[i  if i%2 == 0 else &#39;un-even and small&#39; if i &lt; 5 else  &#39;un-even and large&#39; for i in range(1, 10)]
 
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[54]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -750,62 +751,44 @@ l
 <h2>Nested for loops<a class="headerlink" href="#Nested-for-loops" title="Permalink to this headline">¶</a></h2>
 <p>Like you can do a nested for loop</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span>l = []
-for i in range(5):
-    for j in range(i):
+for i in range(3):
+    for j in range(2):
         l.append((i, j))
 l
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[63]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[(1, 0),
- (2, 0),
- (2, 1),
- (3, 0),
- (3, 1),
- (3, 2),
- (4, 0),
- (4, 1),
- (4, 2),
- (4, 3)]
+[(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]
 </pre></div></div>
 </div>
 <p>You can do the same with list comprehensions</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>[(i, j) for i in range(5) for j in range(i)]
+<span></span>[ (i, j)    for i in range(3)  for j in range(2) ]
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[64]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[(1, 0),
- (2, 0),
- (2, 1),
- (3, 0),
- (3, 1),
- (3, 2),
- (4, 0),
- (4, 1),
- (4, 2),
- (4, 3)]
+[(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]
 </pre></div></div>
 </div>
 <div class="section" id="id3">
