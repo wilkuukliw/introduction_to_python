@@ -44,7 +44,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
+   "execution_count": 58,
    "metadata": {},
    "outputs": [
     {
@@ -53,7 +53,7 @@
        "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
       ]
      },
-     "execution_count": 3,
+     "execution_count": 58,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -109,47 +109,93 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 35,
+   "execution_count": 36,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "[65,\n",
-       " 66,\n",
-       " 67,\n",
-       " 68,\n",
-       " 69,\n",
-       " 70,\n",
-       " 71,\n",
-       " 72,\n",
-       " 73,\n",
-       " 74,\n",
-       " 75,\n",
-       " 76,\n",
-       " 77,\n",
-       " 78,\n",
-       " 79,\n",
-       " 80,\n",
-       " 81,\n",
-       " 82,\n",
-       " 83,\n",
-       " 84,\n",
-       " 85,\n",
-       " 86,\n",
-       " 87,\n",
-       " 88,\n",
-       " 89,\n",
-       " 90]"
+       "['A',\n",
+       " 'B',\n",
+       " 'C',\n",
+       " 'D',\n",
+       " 'E',\n",
+       " 'F',\n",
+       " 'G',\n",
+       " 'H',\n",
+       " 'I',\n",
+       " 'J',\n",
+       " 'K',\n",
+       " 'L',\n",
+       " 'M',\n",
+       " 'N',\n",
+       " 'O',\n",
+       " 'P',\n",
+       " 'Q',\n",
+       " 'R',\n",
+       " 'S',\n",
+       " 'T',\n",
+       " 'U',\n",
+       " 'V',\n",
+       " 'W',\n",
+       " 'X',\n",
+       " 'Y',\n",
+       " 'Z']"
       ]
      },
-     "execution_count": 35,
+     "execution_count": 36,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
     "[chr(i) for i in range(65,91)]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['A',\n",
+       " 'B',\n",
+       " 'C',\n",
+       " 'D',\n",
+       " 'E',\n",
+       " 'F',\n",
+       " 'G',\n",
+       " 'H',\n",
+       " 'I',\n",
+       " 'J',\n",
+       " 'K',\n",
+       " 'L',\n",
+       " 'M',\n",
+       " 'N',\n",
+       " 'O',\n",
+       " 'P',\n",
+       " 'Q',\n",
+       " 'R',\n",
+       " 'S',\n",
+       " 'T',\n",
+       " 'U',\n",
+       " 'V',\n",
+       " 'W',\n",
+       " 'X',\n",
+       " 'Y',\n",
+       " 'Z']"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "import string\n",
+    "list(string.ascii_uppercase)"
    ]
   },
   {
@@ -170,23 +216,46 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 9,
+   "execution_count": 37,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]"
+       "[2, 4, 6, 8]"
       ]
      },
-     "execution_count": 9,
+     "execution_count": 37,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "l = [i for i in range(1, 30) if i%2 == 0]\n",
+    "l = []\n",
+    "for i in range(1, 10):\n",
+    "    if i%2 == 0:\n",
+    "        l.append(i)\n",
     "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[2, 4, 6, 8]"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[i for i in range(1, 10) if i%2 == 0]"
    ]
   },
   {
@@ -205,10 +274,44 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 45,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['A',\n",
+       " 'B',\n",
+       " 'C',\n",
+       " 'D',\n",
+       " 'E',\n",
+       " 'G',\n",
+       " 'H',\n",
+       " 'I',\n",
+       " 'J',\n",
+       " 'L',\n",
+       " 'M',\n",
+       " 'N',\n",
+       " 'O',\n",
+       " 'Q',\n",
+       " 'R',\n",
+       " 'S',\n",
+       " 'T',\n",
+       " 'V',\n",
+       " 'W',\n",
+       " 'X',\n",
+       " 'Y',\n",
+       " 'Z']"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[chr(i) for i in range(65, 91) if i not in [70, 75, 80, 85]]"
+   ]
   },
   {
    "cell_type": "markdown",
@@ -219,10 +322,42 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 49,
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['A',\n",
+       " 'B',\n",
+       " 'C',\n",
+       " 'D',\n",
+       " 'E',\n",
+       " 'G',\n",
+       " 'I',\n",
+       " 'K',\n",
+       " 'M',\n",
+       " 'O',\n",
+       " 'Q',\n",
+       " 'R',\n",
+       " 'S',\n",
+       " 'T',\n",
+       " 'U',\n",
+       " 'V',\n",
+       " 'W',\n",
+       " 'X',\n",
+       " 'Y',\n",
+       " 'Z']"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "[chr(i) for i in range(65, 91) if i not in range(70, 81, 2)]"
+   ]
   },
   {
    "cell_type": "markdown",
@@ -235,7 +370,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 50,
    "metadata": {},
    "outputs": [
     {
@@ -244,13 +379,13 @@
        "['un-even', 2, 'un-even', 4, 'un-even', 6, 'un-even', 8, 'un-even']"
       ]
      },
-     "execution_count": 6,
+     "execution_count": 50,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "[i if i%2 == 0 else \"un-even\" for i in range(1, 10) ]"
+    "[i   if i%2 == 0 else \"un-even\"   for i in range(1, 10)    ]"
    ]
   },
   {
@@ -260,23 +395,42 @@
     "## STUDENTS 10 MINUTES TASK\n",
     "#### elif\n",
     "\n",
-    "Comprehensions can contain elif conditions.   \n",
-    "The following shows the basic structure of a list comprehension containig a elif condition:  "
+    "Comprehensions can contain elif conditions.   "
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 26,
+   "execution_count": 54,
    "metadata": {
     "slideshow": {
      "slide_type": "slide"
     }
    },
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['un-even and small',\n",
+       " 2,\n",
+       " 'un-even and small',\n",
+       " 4,\n",
+       " 'un-even and large',\n",
+       " 6,\n",
+       " 'un-even and large',\n",
+       " 8,\n",
+       " 'un-even and large']"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
-    "# exercise \n",
     "# create something that prints \n",
-    "# ['un-even and small', 2, 'un-even and small', 4, 'un-even and large', 6, 'un-even and large', 8, 'un-even and large']"
+    "# ['un-even and small', 2, 'un-even and small', 4, 'un-even and large', 6, 'un-even and large', 8, 'un-even and large']\n",
+    "\n",
+    "[i  if i%2 == 0 else 'un-even and small' if i < 5 else  'un-even and large' for i in range(1, 10)]\n"
    ]
   },
   {
@@ -289,33 +443,24 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 20,
+   "execution_count": 63,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "[(1, 0),\n",
-       " (2, 0),\n",
-       " (2, 1),\n",
-       " (3, 0),\n",
-       " (3, 1),\n",
-       " (3, 2),\n",
-       " (4, 0),\n",
-       " (4, 1),\n",
-       " (4, 2),\n",
-       " (4, 3)]"
+       "[(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]"
       ]
      },
-     "execution_count": 20,
+     "execution_count": 63,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
     "l = []\n",
-    "for i in range(5):\n",
-    "    for j in range(i):\n",
+    "for i in range(3):\n",
+    "    for j in range(2):\n",
     "        l.append((i, j))\n",
     "l"
    ]
@@ -329,31 +474,22 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 22,
+   "execution_count": 64,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "[(1, 0),\n",
-       " (2, 0),\n",
-       " (2, 1),\n",
-       " (3, 0),\n",
-       " (3, 1),\n",
-       " (3, 2),\n",
-       " (4, 0),\n",
-       " (4, 1),\n",
-       " (4, 2),\n",
-       " (4, 3)]"
+       "[(0, 0), (0, 1), (1, 0), (1, 1), (2, 0), (2, 1)]"
       ]
      },
-     "execution_count": 22,
+     "execution_count": 64,
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-    "[(i, j) for i in range(5) for j in range(i)]"
+    "[ (i, j)    for i in range(3)  for j in range(2) ]"
    ]
   },
   {
@@ -399,7 +535,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": 69,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -409,11 +545,30 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": 71,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('Black', 's'),\n",
+       " ('Black', 'm'),\n",
+       " ('Black', 'l'),\n",
+       " ('Black', 'xl'),\n",
+       " ('White', 's'),\n",
+       " ('White', 'm'),\n",
+       " ('White', 'l'),\n",
+       " ('White', 'xl')]"
+      ]
+     },
+     "execution_count": 71,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
-    "# exercise\n"
+    "# exercise\n",
+    "[(i,j) for i in colors for j in sizes]"
    ]
   },
   {
@@ -425,13 +580,37 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 33,
+   "execution_count": 73,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[('Black', 's'),\n",
+       " ('Black', 'l'),\n",
+       " ('Black', 'xl'),\n",
+       " ('White', 'm'),\n",
+       " ('White', 'l'),\n",
+       " ('White', 'xl')]"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
     "soled_out = [('Black', 'm'), ('White', 's')]\n",
-    "# listcomp goes here\n"
+    "# listcomp goes here\n",
+    "[(i,j) for i in colors for j in sizes if (i,j) not in soled_out]"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
