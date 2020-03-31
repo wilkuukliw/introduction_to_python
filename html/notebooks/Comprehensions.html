@@ -469,7 +469,7 @@ l
 <h3>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#STUDENTS-10-MINUTES-TASK" title="Permalink to this headline">¶</a></h3>
 <p>Create a list of capital letters in the english alphabet</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -478,37 +478,81 @@ l
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[65,
- 66,
- 67,
- 68,
- 69,
- 70,
- 71,
- 72,
- 73,
- 74,
- 75,
- 76,
- 77,
- 78,
- 79,
- 80,
- 81,
- 82,
- 83,
- 84,
- 85,
- 86,
- 87,
- 88,
- 89,
- 90]
+[&#39;A&#39;,
+ &#39;B&#39;,
+ &#39;C&#39;,
+ &#39;D&#39;,
+ &#39;E&#39;,
+ &#39;F&#39;,
+ &#39;G&#39;,
+ &#39;H&#39;,
+ &#39;I&#39;,
+ &#39;J&#39;,
+ &#39;K&#39;,
+ &#39;L&#39;,
+ &#39;M&#39;,
+ &#39;N&#39;,
+ &#39;O&#39;,
+ &#39;P&#39;,
+ &#39;Q&#39;,
+ &#39;R&#39;,
+ &#39;S&#39;,
+ &#39;T&#39;,
+ &#39;U&#39;,
+ &#39;V&#39;,
+ &#39;W&#39;,
+ &#39;X&#39;,
+ &#39;Y&#39;,
+ &#39;Z&#39;]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>import string
+list(string.ascii_uppercase)
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[43]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;A&#39;,
+ &#39;B&#39;,
+ &#39;C&#39;,
+ &#39;D&#39;,
+ &#39;E&#39;,
+ &#39;F&#39;,
+ &#39;G&#39;,
+ &#39;H&#39;,
+ &#39;I&#39;,
+ &#39;J&#39;,
+ &#39;K&#39;,
+ &#39;L&#39;,
+ &#39;M&#39;,
+ &#39;N&#39;,
+ &#39;O&#39;,
+ &#39;P&#39;,
+ &#39;Q&#39;,
+ &#39;R&#39;,
+ &#39;S&#39;,
+ &#39;T&#39;,
+ &#39;U&#39;,
+ &#39;V&#39;,
+ &#39;W&#39;,
+ &#39;X&#39;,
+ &#39;Y&#39;,
+ &#39;Z&#39;]
 </pre></div></div>
 </div>
 </div>
@@ -521,22 +565,43 @@ l
 <div class="line">The following shows the basic structure of a list comprehension containig an if condition:</div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>l = [i for i in range(1, 30) if i%2 == 0]
+<span></span>l = []
+for i in range(1, 10):
+    if i%2 == 0:
+        l.append(i)
 l
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28]
+[2, 4, 6, 8]
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span>[i for i in range(1, 10) if i%2 == 0]
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[2, 4, 6, 8]
 </pre></div></div>
 </div>
 </div>
@@ -544,24 +609,82 @@ l
 <div class="section" id="id1">
 <h3>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Create a list of capital letter from the english aplhabet, but exclude 4 with the Unicode code point of either 70, 75, 80, 85.</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<span></span>[chr(i) for i in range(65, 91) if i not in [70, 75, 80, 85]]
 </pre></div>
 </div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[45]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;A&#39;,
+ &#39;B&#39;,
+ &#39;C&#39;,
+ &#39;D&#39;,
+ &#39;E&#39;,
+ &#39;G&#39;,
+ &#39;H&#39;,
+ &#39;I&#39;,
+ &#39;J&#39;,
+ &#39;L&#39;,
+ &#39;M&#39;,
+ &#39;N&#39;,
+ &#39;O&#39;,
+ &#39;Q&#39;,
+ &#39;R&#39;,
+ &#39;S&#39;,
+ &#39;T&#39;,
+ &#39;V&#39;,
+ &#39;W&#39;,
+ &#39;X&#39;,
+ &#39;Y&#39;,
+ &#39;Z&#39;]
+</pre></div></div>
 </div>
 <p>Create a list of capital letter from from the english aplhabet, but exclude every second between F &amp; O</p>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>
+<span></span>[chr(i) for i in range(65, 91) if i not in range(70, 81, 2)]
 </pre></div>
 </div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[49]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;A&#39;,
+ &#39;B&#39;,
+ &#39;C&#39;,
+ &#39;D&#39;,
+ &#39;E&#39;,
+ &#39;G&#39;,
+ &#39;I&#39;,
+ &#39;K&#39;,
+ &#39;M&#39;,
+ &#39;O&#39;,
+ &#39;Q&#39;,
+ &#39;R&#39;,
+ &#39;S&#39;,
+ &#39;T&#39;,
+ &#39;U&#39;,
+ &#39;V&#39;,
+ &#39;W&#39;,
+ &#39;X&#39;,
+ &#39;Y&#39;,
+ &#39;Z&#39;]
+</pre></div></div>
 </div>
 <div class="section" id="if-/-else">
 <h4>if / else<a class="headerlink" href="#if-/-else" title="Permalink to this headline">¶</a></h4>
@@ -570,16 +693,16 @@ l
 <div class="line">The following shows the basic structure of a list comprehension containig an if / else condition:</div>
 </div>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
-<span></span>[i if i%2 == 0 else &quot;un-even&quot; for i in range(1, 10) ]
+<span></span>[i   if i%2 == 0 else &quot;un-even&quot;   for i in range(1, 10)    ]
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[50]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -592,20 +715,35 @@ l
 </div>
 <div class="section" id="id2">
 <h2>STUDENTS 10 MINUTES TASK<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<div class="line-block">
-<div class="line">Comprehensions can contain elif conditions.</div>
-<div class="line">The following shows the basic structure of a list comprehension containig a elif condition:</div>
-</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+<p>Comprehensions can contain elif conditions.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span># exercise
 # create something that prints
 # [&#39;un-even and small&#39;, 2, &#39;un-even and small&#39;, 4, &#39;un-even and large&#39;, 6, &#39;un-even and large&#39;, 8, &#39;un-even and large&#39;]
+
 </pre></div>
 </div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[52]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;un-even and small&#39;,
+ 2,
+ &#39;un-even and small&#39;,
+ 4,
+ &#39;un-even and large&#39;,
+ 6,
+ &#39;un-even and large&#39;,
+ 8,
+ &#39;un-even and large&#39;]
+</pre></div></div>
 </div>
 </div>
 <div class="section" id="Nested-for-loops">
