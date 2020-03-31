@@ -43,6 +43,8 @@ Ex 1: Basic listcomp
 Ex 2: Basic Dictcomp
 --------------------
 
+`Solution <notebooks/more_on_comp.ipynb#Dictcomp-Challange>`_
+
 1. Create a dictionary containing a deck of cards. The keys should be the elements from the colors set and the values should be the elements from the numbers list as a set.
 
 .. code:: python
