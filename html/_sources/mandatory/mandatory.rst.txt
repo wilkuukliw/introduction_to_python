@@ -1,0 +1,9 @@
+Mandatory assignment
+====================
+
+
+Hand in format
+--------------
+
+* You should create a python file for each assignment. 
+* You should hand in a .zip file containeing all assingment files (assingment_1.py, assignment_2 etc.)
