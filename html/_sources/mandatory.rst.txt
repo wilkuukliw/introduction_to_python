@@ -22,4 +22,33 @@ You should make and show (in class or to Claus) an exam presentation of your own
    ['A♠', 'K♣', ... ] etc.
 
 
-   
+   @properties
+   Create the library code for this client code output. As it is now, it is not pythonic. Some parts of the code would reveal that it is a Java programmer that have written the code. When you create the library code you should fix these mistakes and make it pythonic. This assignment is partly to test if you can read the error msg, and understand analyse the interpreter commands and make client code out of it. 
+
+   >>> bar = Bar()
+   Traceback (most recent call last):
+     File "<stdin>", line 1, in <module>  
+   TypeError: __init__() missing 2 required positional arguments: 'x' and 'y'
+   Traceback (most recent call last):
+   Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    File "property_client.py", line 5, in __init__
+      self.set_x(x)
+    File "property_client.py", line 29, in set_x
+      raise TypeError('x has to be an "int"')
+    TypeError: x has to be an "int"
+    >>> bar = Bar(12, 'There')
+    >>> bar.y = 123
+    >>> bar.set_x(1024)
+    >>> bar.get_x()
+    1024
+
+
+
+
+
+
+
+
+
+
