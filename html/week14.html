@@ -257,15 +257,15 @@ The learning goal for this you can read in the sidebar, and the way to achieve t
 </div>
 <div class="section" id="ex-3-deck-of-cards">
 <h3>Ex 3: Deck of Cards<a class="headerlink" href="#ex-3-deck-of-cards" title="Permalink to this headline">¶</a></h3>
-<p>Solution:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;J&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">]</span>
-<span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="nb">chr</span><span class="p">(</span><span class="n">j</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9824</span><span class="p">,</span> <span class="mi">9828</span><span class="p">)]</span>
-</pre></div>
-</div>
 <ol class="arabic simple">
 <li><p>Create a listcomp that produces a list of tuples containing all card in a deck.</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[(</span><span class="s1">&#39;A&#39;</span><span class="p">,</span><span class="s1">&#39;♠&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;K&#39;</span><span class="p">,</span><span class="s1">&#39;♣&#39;</span><span class="p">),</span> <span class="o">...</span> <span class="p">]</span> <span class="n">etc</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Solution:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;J&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">]</span>
+<span class="p">[(</span><span class="n">i</span><span class="p">,</span><span class="nb">chr</span><span class="p">(</span><span class="n">j</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">9824</span><span class="p">,</span> <span class="mi">9828</span><span class="p">)]</span>
 </pre></div>
 </div>
 </div>
