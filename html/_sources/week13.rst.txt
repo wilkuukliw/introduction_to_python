@@ -90,7 +90,7 @@ With this function as a starting point
 Ex1: Time it!
 -------------
 
-`Solution <week13/exercises/solution/timer.py>`_
+`Solution <../week13/exercises/solution/timer.py>`_
 
 Next week we will work with *generators*, *generator expressions* and *list comprehensions*. These topics has a lot to do with program efficiency. 
 
@@ -147,7 +147,7 @@ Go to this url https://pypi.org/project/memory-profiler/ and use the module. Not
 Ex3: Slow down code
 ------------------- 
 
-`Solution <week13/exercises/solution/slow_down_execution.py>`_
+`Solution <../week13/exercises/solution/slow_down_execution.py>`_
 
 The code below counts down from n -> 0. So calling countdown(5) prints: 5 4 3 2 1 Liftoff!
 

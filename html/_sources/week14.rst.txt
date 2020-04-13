@@ -62,6 +62,13 @@ Ex 2: Basic Dictcomp
 Ex 3: Deck of Cards
 -------------------
 
+Solution:
+
+.. code:: python
+   
+   numbers = range(2, 11) + ['J', 'Q', 'K', 'A']
+   [(i,chr(j)) for i in numbers for j in range(9824, 9828)]
+
 1. Create a listcomp that produces a list of tuples containing all card in a deck. 
 
 .. code:: python
@@ -72,6 +79,8 @@ Ex 3: Deck of Cards
 -----------------------------------
 Ex 4: List Comprehension chalenges.
 -----------------------------------
+
+`Solution <../week14/exercises/solution/list_comprehensions_challenge.py>`_
 
 All the below exercieses, unless something else is stated, should be solved using: 
 

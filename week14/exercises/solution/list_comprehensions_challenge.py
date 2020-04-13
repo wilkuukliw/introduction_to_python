@@ -15,24 +15,6 @@
 import resource
 import time
 
-def memory(func):
-
-    def wrapper(*args, **kwargs):
-        # meassure memory before
-        start_mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
-        
-        # execute the script
-        value =  func(*args, **kwargs)
-        
-        # meassure memory after
-        end_mem = (resource.getrusage(resource.RUSAGE_SELF).ru_maxrss) - start_mem
-        
-        print(f'Memory usage: {end_mem}')
-
-        return value
-        
-    return wrapper    
-
 
 def timer(func):
     def wrapper(*args, **kwargs):
@@ -49,7 +31,6 @@ def timer(func):
 
 # 1. Find all of the numbers from 1-1000 that are divisible by 7
 @timer
-@memory
 def divisible_by_7(n):
     l = []
     for i in range(1, n):
@@ -58,7 +39,6 @@ def divisible_by_7(n):
     return l
 
 @timer
-@memory
 def divisible_by_7_comp(n):
     l1 = [i for i in range(n) if i%7==0]
     return l1
