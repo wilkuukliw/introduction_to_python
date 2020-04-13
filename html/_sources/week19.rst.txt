@@ -1,12 +1,35 @@
-Week 19 - Feedback: Mandatory assignment
-========================================
+
+Week 19 - Mandatory Assignment
+==============================
+
+
+This week will be used for a mandatory assignment. 
+
+.. note::
+
+   | **Start:**   Tuesday april 14th, 8:30. 
+   | **Handin:**  Thursday april 16th, 12:00 
+
+*This applies for both classes (monday & tuesday)*
+
+Assignment
+----------
+
+The assignment will be accessible on fronter in a folder called **Mandatory Assignment** on **Tuesday april 14th, 8:30**
+
+* `Monday class <https://kea-fronter.itslearning.com/Folder/processfolder.aspx?FolderID=734040>`_
+* `Tuesday class <https://kea-fronter.itslearning.com/Folder/processfolder.aspx?FolderID=734043>`_ 
+
+
+.. todo::
+   
+   * Create client code example. Assignment: create library code for making this work. 
+         
 
 
 
-Materials
----------
 
-Exercises
----------
+
+
 
 

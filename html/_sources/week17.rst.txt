@@ -1,5 +1,5 @@
-Week 17 - Context Managers
-==========================
+Week 17 - Generators
+====================
 
 .. sidebar:: Learning goals
 

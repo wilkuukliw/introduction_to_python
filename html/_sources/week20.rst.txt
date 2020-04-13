@@ -1,16 +1,12 @@
-Week 20 - Exam preperation & Recap
-==================================
+Week 20 - Feedback: Mandatory assignment 
+========================================
 
 .. sidebar:: Learning goals
     :subtitle: After this week you will be able to:
         
-        - Create and use a Jupyter Notebook 
-        - Create and use a virtual enviroment
 
 Materials
 ---------
-* Jupyter Notebook
-* Set up Virtual enviroment
 
 Exercises
 ---------
