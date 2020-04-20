@@ -8,6 +8,14 @@ class Adder:
     def __call__(self, x, y):
         return x + y
 
-
 add2 = Adder()
 
+
+
+add1()
+add2()
+
+
+l = []
+l2 = []
+l + ladd2()
