@@ -28,7 +28,9 @@ Remember some of it is recap, some of it we will cover in the coming lessons.
 
 Materials
 ---------
-* `What Does It Take To Be An Expert At Python? <https://www.youtube.com/watch?v=7lmCu8wz8ro>`_
 
+.. raw:: html
 
-
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/7lmCu8wz8ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  
