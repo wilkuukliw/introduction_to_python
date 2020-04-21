@@ -49,7 +49,6 @@ def timer(func):
 
 # 1. Find all of the numbers from 1-1000 that are divisible by 7
 @timer
-@memory
 def divisible_by_7(n):
     l = []
     for i in range(1, n):
@@ -58,7 +57,6 @@ def divisible_by_7(n):
     return l
 
 @timer
-@memory
 def divisible_by_7_comp(n):
     l1 = [i for i in range(n) if i%7==0]
     return l1

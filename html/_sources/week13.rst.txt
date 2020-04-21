@@ -47,6 +47,8 @@ Materials
 * `Primer on Python Decorators <https://realpython.com/primer-on-python-decorators/>`_
 * `Python Inner Functions—What Are They Good For? <https://realpython.com/inner-functions-what-are-they-good-for/>`_
 * `Notebook on Decorators <notebooks/Decorators.ipynb>`_
+* `Code from today <../week13/code_from_today/>`_
+
 Exercises
 ---------
 * :ref:`Small exercises <exsm>`
@@ -59,6 +61,9 @@ Exercises
 ---------------
 Small Exercises
 ---------------
+
+`Solution <../week13/exercises/solution/add.py>`_
+
 
 With this function as a starting point 
 
@@ -84,6 +89,8 @@ With this function as a starting point
 -------------
 Ex1: Time it!
 -------------
+
+`Solution <../week13/exercises/solution/timer.py>`_
 
 Next week we will work with *generators*, *generator expressions* and *list comprehensions*. These topics has a lot to do with program efficiency. 
 
@@ -140,6 +147,7 @@ Go to this url https://pypi.org/project/memory-profiler/ and use the module. Not
 Ex3: Slow down code
 ------------------- 
 
+`Solution <../week13/exercises/solution/slow_down_execution.py>`_
 
 The code below counts down from n -> 0. So calling countdown(5) prints: 5 4 3 2 1 Liftoff!
 
