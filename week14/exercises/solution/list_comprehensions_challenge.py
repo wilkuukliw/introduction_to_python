@@ -12,22 +12,22 @@
 
 """
 # deocorator from lesson-07
-import resource
+#import resource
 import time
 
 def memory(func):
 
     def wrapper(*args, **kwargs):
         # meassure memory before
-        start_mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+ #       start_mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
         
         # execute the script
         value =  func(*args, **kwargs)
         
         # meassure memory after
-        end_mem = (resource.getrusage(resource.RUSAGE_SELF).ru_maxrss) - start_mem
+  #      end_mem = (resource.getrusage(resource.RUSAGE_SELF).ru_maxrss) - start_mem
         
-        print(f'Memory usage: {end_mem}')
+   #     print(f'Memory usage: {end_mem}')
 
         return value
         
