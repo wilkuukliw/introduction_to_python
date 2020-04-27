@@ -7,19 +7,37 @@ This week will be used for a mandatory assignment.
 
 .. note::
 
-   | **Start:**   
-   | **Handin:**  
+   | **Assingment 1:**
+   | Start: 8:40   
+   | Handin: 9:30
 
-*This applies for both classes (monday & tuesday)*
+   | **Assignment 2:**
+   | Start: 10:00
+   | Handin: Monday 11 or Tuesday 12 (next week)   
 
-Assignment
-----------
 
-The assignment will be accessible on fronter in a folder called **Mandatory Assignment** on 
+Assignments
+-----------
+----------------------------------------------------------------------------------------
+Assignment 1 will be accessible on fronter in a folder called **Mandatory Assignment 1** 
+----------------------------------------------------------------------------------------
 
 * `Monday class <https://kea-fronter.itslearning.com/Folder/processfolder.aspx?FolderID=734040>`_
 * `Tuesday class <https://kea-fronter.itslearning.com/Folder/processfolder.aspx?FolderID=734043>`_ 
 
+Handin is a "normal" handin, and you will some days after get written feedback on fronter. 
+
+----------------------------------------------------------------------------------------
+Assignment 2 will be accessible on fronter in a folder called **Mandatory Assignment 2** 
+----------------------------------------------------------------------------------------
+
+* `Monday class <https://kea-fronter.itslearning.com/Folder/processfolder.aspx?FolderID=734040>`_
+* `Tuesday class <https://kea-fronter.itslearning.com/Folder/processfolder.aspx?FolderID=734043>`_ 
+
+Handin is a demo (10 minutes) through Teams on monday or tuesday. You should sign up for a spot where you would like to show me you presentation. The meeting booking sheet you can find on fronter.
+
+* `Meeting booking Monday class <https://kea-fronter.itslearning.com/Folder/processfolder.aspx?FolderID=734040>`_
+* `Meeting booking Tuesday class <https://kea-fronter.itslearning.com/Folder/processfolder.aspx?FolderID=734043>`_ 
 
 .. todo::
    
