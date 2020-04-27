@@ -1,0 +1,20 @@
+# Jupyter Notebook
+
+
+## Install
+
+``` 
+    pip install notebook
+
+```
+
+## Run
+
+``` 
+    jupyter notebook
+
+```
+
+You now have a development enviroment for use in your browser.
+
+

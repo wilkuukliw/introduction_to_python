@@ -1,4 +1,54 @@
 Week 18 - Context Managers 
 ==========================
 
+.. sidebar:: Learning goals
+        
+        - Setup and run a Virtual Enviroment
+        - Install and use Jupyter Notebook
+        - Being able to use a Context Manager
+        - Creating your own Context Managers
+        - Working with JSON files
+        - Working with the Pickles Module
+        - Working with CSV files
+        - Working with Pandas
+        - Working with SQlite database
+
+Today we will work with context managers. Context managers can in short be described as something that takes care of the related tasks of a specific task. An example of this could be when opening a file, the context manager takes care of automaticly closing the file when we are finnished using it.
+
+You will make your own context managers and use already created ones. 
+
+We start out by introducing a new development enviroment, the Jupyter Notebook. And we will in connection with this look at what a virtual enviroment is, and how to use it. 
+
+Materials
+---------
+
+* `Virtual Enviroment Setup Guide <notebooks/virtual_env_setup.md>`_
+* `Jupyter Notebook install and run <notebooks/jupyter_notebook.md>`_
+* `Getting Started With Jupyter Notebook for Python <https://medium.com/codingthesmartway-com-blog/getting-started-with-jupyter-notebook-for-python-4e7082bd5d46>`_ 
+* `Context Managers notebook <notebooks/Context-managers.ipynb>`_
+* `JSON notebook <notebooks/JSON.ipynb>`_
+* `Pickle notebook <notebooks/Pickle-Pythonobjectserialization.ipynb>`_
+* `CSV notebook <notebooks/csv.ipynb>`_
+* `Sqlite notebook <notebooks/Sqlite.ipynb>`_
+
+
+Exercises
+---------
+
+* `CSV Quiz <https://realpython.com/quizzes/python-csv/>`_
+* `JSON 10 minutes exer <notebooks/JSON.html#10-minutes-exercise>`_
+* `SQlite 10 minutes exer <notebooks/Sqlite.html#10-minutes-exercise>`_
+* `ConvertCSVtoJSON <notebooks/ConvertCSVtoJSON.ipynb>`_
+* `Decorator / Context Manager <notebooks/Assignment_Decorator_Context_Manager.ipynb>`_ 
+
+-----------------------
+Follow these tutorials:
+-----------------------
+* `Python Context Managers <https://stackabuse.com/python-context-managers/>`_
+* `Working With JSON Data in Python <https://realpython.com/python-json/>`_
+* `Reading and Writing CSV Files in Python <https://realpython.com/python-csv/>`_
+
+
+
+
 
