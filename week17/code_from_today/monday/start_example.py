@@ -12,11 +12,11 @@ def timer(func):
     return wrapper
 
 # @timer
-@profile
+#@profile
 def sum_of_list():
     return sum([i*i for i in range(1, 100000)])
 
-@profile
+#@profile
 def sum_of_gen():
     return sum((i*i for i in range(1, 100000)))
 

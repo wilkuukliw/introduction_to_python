@@ -60,6 +60,8 @@ Exercises
 ex1:  Python Students
 ---------------------
 
+`Solution <../week17/exercises/solution/python_students.py>`_
+
 Based on the Student class below, create a PythonStudents class that acts as a collection of students. 
 The class should implement the iterations functionality (iter() and next()) 
 and be able to return an iter object. 
@@ -104,6 +106,8 @@ in the list.
 ex2: School of students
 -----------------------
 
+`Solution <../week17/exercises/solution/school_of_students.py>`_
+
 In this exercise you start out by having a list of names, and a list of majors.
     
 Your job is to create:
@@ -143,6 +147,8 @@ Both functions should do the same, but one returns a list and one a generator ob
 ex3: Range Mimic
 ----------------
 
+`Solution <../week17/exercises/solution/range_mimic.py>`_
+
 1. Create a "clone" of the build in range() function, by doing an iterator class.
 
 Try this out first in your interpreter to get inspired:
@@ -160,6 +166,8 @@ TypeError: 'range' object is not an iterator
 ---------------------------------
 ex4: List Comp chal as generators
 ---------------------------------
+
+Solution: The solution for all exercises is to put **()** instad of **[]** around the list comprehensions. Try that and measurre the time and memory it takes to run.  
 
 Do the `List Comprehension chalenges`_ from last time but now use generator functions and generatpr expressions where possible.
 

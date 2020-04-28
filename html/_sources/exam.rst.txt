@@ -34,7 +34,6 @@ Exam Topics
 * Data Structures & functions
 * IO & Context Managers
 * Pythonic OOP
-* Protocols
 * Generators
 * Decorators
 
@@ -43,7 +42,7 @@ Exam advice
 -----------
 The flow of the exam flow be as:
 
-Latest << date will come >>  you will have to hand in an synopsis describing what you will present in connection with the different exam topics. The abstract should be maximum one page long and should follow the `exam_synopsis_template`_ .
+Latest 4/6  you will have to hand in an synopsis describing what you will present in connection with the different exam topics. The abstract should be maximum one page long and should follow the exam_synopsis_template `Markdown  <Markdown <exam_synopsis_template.md>`_  <Pdf <exam_synopsis_template.md>`_  .
 
 ---------
 Oral exam
